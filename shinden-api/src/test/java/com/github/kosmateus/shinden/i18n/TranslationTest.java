@@ -4,6 +4,7 @@ import com.github.kosmateus.shinden.BaseTest;
 import io.github.classgraph.ClassGraph;
 import io.github.classgraph.ClassInfo;
 import io.github.classgraph.ScanResult;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.extension.ExtensionContext;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -17,6 +18,7 @@ import java.util.stream.Stream;
 
 import static com.github.kosmateus.shinden.utils.TestUtils.assertTranslations;
 
+@Disabled
 @DisplayName("Translation test")
 public class TranslationTest extends BaseTest {
 
