@@ -1,0 +1,110 @@
+episode:
+  number:
+    only-1: Tylko 1
+    between-2-and-14: Od 2 do 14
+    between-15-and-28: Od 15 do 28
+    between-29-and-100: Od 29 do 100
+    more-than-100: Powyżej 100
+  length:
+    less-than-7-minutes: Krótsze niż 7 minut
+    between-7-and-18-minutes: Od 7 do 18 minut
+    between-19-and-27-minutes: Od 19 do 27 minut
+    between-28-and-48-minutes: Od 28 do 48 minut
+    more-than-48-minutes: Powyżej 48 minut
+title:
+  type:
+    tv: TV
+    ova: OVA
+    ona: ONA
+    movie: Movie
+    special: Special
+    music: Music
+user:
+  favorite:
+    tags:
+      list-type:
+        both: Łącznie
+        anime: Anime
+        manga: Manga
+      rate-type:
+        total: Ogólna
+        story: Fabuła
+        graphic: Grafika
+        music: Muzyka
+        line: Kreska
+        characters: Postacie
+      tag-type:
+        genre: Gatunki
+        target-group: Grupy docelowe
+        entity: Rodzaje postaci
+        place: Miejsce i czas
+        tag: Pozostałe tagi
+        studio: Studio
+        production-type: Typy produkcji
+        serialization: Wydawnictwa
+        source: Pierwowzór
+  information:
+    edit:
+      gender:
+        male: Mężczyzna
+        female: Kobieta
+        none: "?"
+  settings:
+    edit:
+      page-theme:
+        default: Domyślna skórka
+        simple-blue: Simple Blue
+        bakemono: Bakemono
+        helloween: Helloween
+        higurashi: Higurashi
+        christmas: Christmas
+        christmas-no-snow: Christmas bez śniegu
+      page-main-menu:
+        all: przypięte na górze strony (pływające)
+        mobile: przypięte na urządzeniach rozpoznanych jako mobilne (tablety i telefony)
+        phone: przypięte na urządzeniach rozpoznanych jako telefony
+        none: zawsze na początku strony
+      show:
+        yes: Tak
+        no: Nie
+      slider-position:
+        no-limit: brak ograniczeń
+        three-items: 3 pozycje
+        six-items: 6 pozycji
+        twelve-items: 12 pozycji
+      subtitle-lang:
+        none: "--"
+        jp: Japoński
+        pl: Polski
+        en: Angielski
+        cn: Chiński
+        kr: Koreański
+      status:
+        in-progress: Oglądam
+        completed: Obejrzane
+        skip: Pomijam
+        hold: Wstrzymane
+        dropped: Porzucone
+        plan: Planuję
+      title-status:
+        proposal: Deklaracja
+        airing: Emitowane
+        not-yet-aired: Zapowiedź
+        finished: Zakończone
+      skip-fillers:
+        no: Nie
+        yes: Tak
+      status-autochange:
+        no: Nie
+        yes: Tak
+      chapter-status:
+        in-progress: Czytam
+        completed: Przeczytałem
+        skip: Pomijam
+        hold: Wstrzymane
+        dropped: Porzucone
+        plan: Planuję
+  import-mal-list:
+    import-type:
+      fill: Uzupełnij listę (nie zmieniaj statusów)
+      replace: Nadpisz statusy
