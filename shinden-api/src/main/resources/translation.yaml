@@ -12,6 +12,18 @@ episode:
     between-28-and-48-minutes: Od 28 do 48 minut
     more-than-48-minutes: Powyżej 48 minut
 title:
+  connection:
+    source-material: Pierwowzór
+    adaptation: Adaptacja
+    prequel: Prequel
+    sequel: Sequel
+    alternative: Alternatywna wersja
+    side-story: Historia poboczna
+    spin-off: Spin-off
+    summary: Podsumowanie
+    characters: Postacie
+    main-story: Historia Głowna
+    other: Inne
   type:
     tv: TV
     ova: OVA

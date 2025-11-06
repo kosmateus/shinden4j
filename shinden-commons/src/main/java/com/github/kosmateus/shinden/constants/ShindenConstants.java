@@ -6,8 +6,9 @@ import java.util.function.Function;
 
 public class ShindenConstants {
 
-    public static final String SHINDEN_URL = "https://shinden.pl";
-    public static final String SHINDEN_USER_LIST_URL = "https://lista.shinden.pl";
+    public static final String SHINDEN_HOST = "shinden.pl";
+    public static final String SHINDEN_URL = "https://" + SHINDEN_HOST;
+    public static final String SHINDEN_USER_LIST_URL = "https://lista." + SHINDEN_HOST;
     public static final String DATE_TIME_FORMAT = "yyyy-MM-dd HH:mm:ss";
     public static final String DATE_FORMAT = "yyyy-MM-dd";
     public static final PatternMatcher USER_ID_MATCHER = PatternMatcher.match("user/(\\d+)", 1);

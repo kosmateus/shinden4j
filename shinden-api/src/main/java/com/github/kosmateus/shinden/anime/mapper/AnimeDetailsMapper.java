@@ -20,6 +20,7 @@ import com.github.kosmateus.shinden.common.enums.TitleConnectionType;
 import com.github.kosmateus.shinden.common.enums.TitleStatus;
 import com.github.kosmateus.shinden.common.enums.TitleType;
 import com.github.kosmateus.shinden.common.enums.UrlType;
+import com.github.kosmateus.shinden.constants.ShindenConstants;
 import com.github.kosmateus.shinden.enums.tag.CharacterType;
 import com.github.kosmateus.shinden.enums.tag.Genre;
 import com.github.kosmateus.shinden.enums.tag.Other;
@@ -35,6 +36,7 @@ import org.jsoup.nodes.Element;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
@@ -62,6 +64,18 @@ public class AnimeDetailsMapper extends BaseDocumentMapper {
     private static final String RECOMMENDATION_ID_REGEX = "recommendation_(\\d+)";
     private static final String USER_ID_REGEX = "/user/(\\d+)-";
     private static final String DATE_TIME_REGEX = "(\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2})";
+    private static final DateTimeFormatter DATE_FORMATER = DateTimeFormatter.ofPattern("dd.MM.yyyy");
+    private static final DateTimeFormatter DATE_FORMATTER_DEFAULT = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+    private static final Function<String, LocalDate> LOCAL_DATE_MAPPER = date -> {
+        if (date == null || date.isEmpty()) {
+            return null;
+        }
+        if (date.contains(".")) {
+            return LocalDate.parse(date, DATE_FORMATER);
+        } else {
+            return LocalDate.parse(date, DATE_FORMATTER_DEFAULT);
+        }
+    };
 
     public AnimeDetails map(Long animeId, Map<String, Document> results) {
         return AnimeDetails.builder()
@@ -72,8 +86,9 @@ public class AnimeDetailsMapper extends BaseDocumentMapper {
                 .description(parseDescription(results.get(SUMMARY)))
                 .image(parseImage(results.get(SUMMARY)))
                 .rating(parseRating(results.get(SUMMARY)))
+                .userRating(parseUserRating(results.get(SUMMARY)))
                 .information(parseInformation(results.get(SUMMARY)))
-                .generalStatistics(parseGeneralStatistics(results.get(STATS)))
+                .generalStatistics(parseGeneralStatistics(results.get(SUMMARY)))
                 .pageCreators(parsePageCreators(results.get(SUMMARY)))
                 .connectedTitles(parseConnectedTitles(results.get(SUMMARY)))
                 .forumTopics(parseForumTopics(results.get(SUMMARY)))
@@ -95,7 +110,17 @@ public class AnimeDetailsMapper extends BaseDocumentMapper {
     protected Map<Class<?>, Function<String, ?>> typeMappers() {
         return ImmutableMap.of(
                 AgeType.class, AgeType::fromValue,
-                RateType.class, RateType::fromValue
+                RateType.class, RateType::fromValue,
+                LocalDate.class, LOCAL_DATE_MAPPER,
+                TitleConnectionType.class, type -> {
+                    for (TitleConnectionType t : TitleConnectionType.values()) {
+                        if (t.getTranslation().equalsIgnoreCase(type)) {
+                            return t;
+                        }
+                    }
+                    throw new IllegalArgumentException("Unknown title connection type: " + type);
+                },
+                UrlType.class, UrlType::fromValue
         );
     }
 
@@ -170,6 +195,24 @@ public class AnimeDetailsMapper extends BaseDocumentMapper {
                 .music(music)
                 .characters(characters)
                 .build();
+    }
+
+    private AnimeDetails.UserRating parseUserRating(Document doc) {
+        List<Integer> ratings = mapper.with(doc)
+                .select("section.title-rates table x-star-rating")
+                .mapTo(e -> Integer.parseInt(e.attr("value")))
+                .orElse(Collections.emptyList());
+
+        if (ratings.isEmpty()) return null;
+
+        return AnimeDetails.UserRating.builder()
+                .story(ratings.get(0))
+                .graphics(ratings.get(1))
+                .music(ratings.get(2))
+                .characters(ratings.get(3))
+                .overall(ratings.get(4))
+                .build();
+
     }
 
     private AnimeDetails.Tags parseTags(Document doc) {
@@ -402,31 +445,26 @@ public class AnimeDetailsMapper extends BaseDocumentMapper {
                             .attr("href")
                             .pattern(PatternMatcher.match("/(?:titles|manga|series)/(\\d+)", 1))
                             .toInteger()
-                            .orElse(null);
-                    String typeText = mapper.with(e)
-                            .select("figcaption.figure-type")
-                            .mapTo(Element::text)
-                            .orElse(Collections.emptyList())
-                            .stream()
-                            .filter(s -> !s.equalsIgnoreCase("Anime") && !s.equalsIgnoreCase("Manga") && !s.isEmpty())
-                            .findFirst()
-                            .orElse("");
-                    TitleConnectionType connectionType = TitleConnectionType.OTHER;
-                    for (TitleConnectionType t : TitleConnectionType.values()) {
-                        if (typeText.toLowerCase().contains(t.name().toLowerCase().replace("_", " "))) {
-                            connectionType = t;
-                            break;
-                        }
-                    }
-                    UrlType urlType = null;
-                    String href = mapper.with(e)
+                            .orThrowWithCode("connected-title.id");
+                    TitleConnectionType connectionType = mapper.with(e)
+                            .select("figcaption.figure-type", 1)
+                            .get(0)
+                            .ownText()
+                            .mapTo(TitleConnectionType.class)
+                            .orThrowWithCode("connected-title.connection-type");
+                    String title = mapper.with(e)
+                            .selectFirst("figcaption > a")
+                            .ownText()
+                            .orThrowWithCode("connected-title.title");
+                    UrlType urlType = mapper.with(e)
                             .selectFirst("figcaption > a")
                             .attr("href")
-                            .orElse("");
-                    if (href.contains("/manga/")) urlType = UrlType.MANGA;
-                    if (href.contains("/series/")) urlType = UrlType.TITLES;
+                            .pattern(ShindenConstants.MEDIA_URL_TYPE_MATCHER)
+                            .mapTo(UrlType.class)
+                            .orThrowWithCode("connected-title.url-type");
                     return ConnectedTitle.builder()
                             .id(id)
+                            .title(title)
                             .urlType(urlType)
                             .connectionType(connectionType)
                             .build();
@@ -439,8 +477,14 @@ public class AnimeDetailsMapper extends BaseDocumentMapper {
                 .select("section.title-threads ul.info-aside-list li")
                 .mapTo(e -> {
 
+                    Integer id = mapper.with(e)
+                            .selectFirst("a[href^='https://forum." + ShindenConstants.SHINDEN_HOST + "/posts/']")
+                            .attr("href")
+                            .pattern(PatternMatcher.match("posts/(\\d+)", 1))
+                            .toInteger()
+                            .orThrowWithCode("forum-topic.id");
                     String title = mapper.with(e)
-                            .selectFirst("a[href^='https://forum.shinden.pl/posts/']")
+                            .selectFirst("a[href^='https://forum." + ShindenConstants.SHINDEN_HOST + "/posts/']")
                             .ownText()
                             .orElse("");
                     String sub = mapper.with(e)
@@ -449,7 +493,7 @@ public class AnimeDetailsMapper extends BaseDocumentMapper {
                             .replaceAll("(^W: |</?\\w+.*?>)", "")
                             .trim();
                     return AnimeDetails.ForumTopic.builder()
-                            .id(null)
+                            .id(id)
                             .title(title)
                             .subForum(sub)
                             .build();
@@ -489,14 +533,17 @@ public class AnimeDetailsMapper extends BaseDocumentMapper {
                         .selectFirst("i.fa-facebook.button-with-tip")
                         .exists())
                 .available(mapper.with(row)
-                        .selectFirst("td.ep-online i.fa-times")
+                        .selectFirst("i.fa.fa-fw.fa-check")
                         .exists())
-                .filler(row.selectFirst("i.fa-facebook.button-with-tip") != null)
-                .available(row.selectFirst("td.ep-online i.fa-times") == null)
                 .languages(mapper.with(row)
                         .select("td > span.flag-icon")
-                        .mapTo(element -> element.attr("title"))
-                        .orElse(Collections.emptyList()))
+                        .mapTo(
+                                element -> element.classNames().stream()
+                                        .filter(name -> name.startsWith("flag-icon-"))
+                                        .map(name -> name.substring("flag-icon-".length()))
+                                        .findFirst()
+                                        .orElse(null)
+                        ).orElse(null).stream().filter(Objects::nonNull).collect(Collectors.toList()))
                 .releaseDate(mapper.with(row.selectFirst("td.ep-date"))
                         .text()
                         .mapTo(LocalDate.class)

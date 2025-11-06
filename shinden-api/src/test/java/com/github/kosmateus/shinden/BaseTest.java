@@ -33,9 +33,13 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 import java.lang.reflect.Method;
 import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Map;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
@@ -134,6 +138,17 @@ public abstract class BaseTest {
                 String fileContent = reader.lines().collect(Collectors.joining(System.lineSeparator()));
                 return objectMapperRoot.write(JsonParser.parseString(fileContent));
             }
+        }
+    }
+
+    protected void saveJsonInTarget(Object object, String filename) {
+        String json = objectMapper.write(object);
+        Path path = Paths.get("target", filename);
+        try {
+            Files.createDirectories(path.getParent());
+            Files.write(path, json.getBytes(StandardCharsets.UTF_8));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
         }
     }
 
@@ -266,6 +281,13 @@ public abstract class BaseTest {
 
         public boolean isSuccessfullyAuthenticated() {
             return authenticated;
+        }
+
+        public Map<String, String> getCookies() {
+            if (!authenticated) {
+                return null;
+            }
+            return super.getCookies();
         }
     }
 

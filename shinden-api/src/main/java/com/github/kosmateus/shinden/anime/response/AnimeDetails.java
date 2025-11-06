@@ -18,6 +18,7 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 
+import javax.annotation.Nullable;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.List;
@@ -31,6 +32,8 @@ public class AnimeDetails {
     private final List<String> alternativeTitles;
     private final String description;
     private final String image;
+    @Nullable
+    private final UserRating userRating;
     private final Rating rating;
     private final Tags tags;
     private final Information information;
@@ -43,6 +46,7 @@ public class AnimeDetails {
     private final List<ForumTopic> forumTopics;
     private final List<Review> reviews;
     private final List<TitleRecommendation> recommendations;
+    @Nullable
     private final Statistics statistics;
 
     @Getter
@@ -121,6 +125,17 @@ public class AnimeDetails {
         private final Float graphics;
         private final Float music;
         private final Float characters;
+    }
+
+    @Getter
+    @Builder
+    @AllArgsConstructor
+    public static class UserRating {
+        private final Integer overall;
+        private final Integer story;
+        private final Integer graphics;
+        private final Integer music;
+        private final Integer characters;
     }
 
     @Getter
@@ -245,6 +260,7 @@ public class AnimeDetails {
     @Builder
     @AllArgsConstructor
     public static class Episode {
+        @Nullable
         private final Integer id;
         private final String title;
         private final Float number;

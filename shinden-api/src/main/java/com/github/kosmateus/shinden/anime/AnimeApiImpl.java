@@ -6,6 +6,7 @@ import com.github.kosmateus.shinden.anime.request.AnimeSearchRequest;
 import com.github.kosmateus.shinden.anime.request.AnimeSearchRequest.SortType;
 import com.github.kosmateus.shinden.anime.response.AnimeDetails;
 import com.github.kosmateus.shinden.anime.response.AnimeSearchResult;
+import com.github.kosmateus.shinden.auth.SessionManager;
 import com.github.kosmateus.shinden.http.response.ResponseHandler;
 import com.github.kosmateus.shinden.request.FixedPageable;
 import com.github.kosmateus.shinden.request.Sort;
@@ -53,6 +54,7 @@ public class AnimeApiImpl implements AnimeApi {
     private final AnimeHttpClient httpClient;
     private final AnimeSearchMapper searchMapper;
     private final AnimeDetailsMapper detailsMapper;
+    private final SessionManager sessionManager;
 
     /**
      * Searches for anime titles based on the specified request and pagination details.
@@ -91,7 +93,9 @@ public class AnimeApiImpl implements AnimeApi {
             futures.put(CHARACTERS, executor.submit(() -> parseToDocument(httpClient.getCharacters(animeId))));
             futures.put(RECOMMENDATIONS, executor.submit(() -> parseToDocument(httpClient.getRecommendations(animeId))));
             futures.put(REVIEWS, executor.submit(() -> parseToDocument(httpClient.getReviews(animeId))));
-            futures.put(STATS, executor.submit(() -> parseToDocument(httpClient.getStats(animeId))));
+            if (sessionManager.isSuccessfullyAuthenticated()) {
+                futures.put(STATS, executor.submit(() -> parseToDocument(httpClient.getStats(animeId))));
+            }
 
             Map<String, Document> results = new HashMap<>();
 

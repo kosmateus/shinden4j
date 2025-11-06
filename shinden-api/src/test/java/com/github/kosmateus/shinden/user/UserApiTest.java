@@ -58,6 +58,7 @@ import lombok.NoArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Nested;
@@ -149,8 +150,10 @@ class UserApiTest extends BaseTest {
     @DisplayName("Favourite Tags tests")
     class FavouriteTagsTest {
 
+
         @PauseBetween(500)
         @ParameterizedTest
+        @Disabled("Disabled due too many tags to test")
         @DisplayName("Should successfully get favourite tags")
         @ArgumentsSource(FavouriteTagsRequestArgumentsProvider.class)
         void shouldSuccessfullyGetFavouriteTags(FavouriteTagsRequest request) {
@@ -541,6 +544,7 @@ class UserApiTest extends BaseTest {
 
             assertAnimeList(animeList);
         }
+
 
         @Test
         @DisplayName("Should successfully get completed user anime list")

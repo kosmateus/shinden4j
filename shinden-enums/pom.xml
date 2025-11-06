@@ -279,9 +279,17 @@
 
             <plugin>
                 <artifactId>maven-resources-plugin</artifactId>
+                <groupId>org.apache.maven.plugins</groupId>
+                <version>3.2.0</version>
                 <executions>
                     <execution>
+                        <id>copy-generated-yaml-into-classes</id>
+                        <phase>process-resources</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
                         <configuration>
+                            <outputDirectory>${project.build.outputDirectory}</outputDirectory>
                             <resources>
                                 <resource>
                                     <directory>${project.build.directory}/generated-sources/resources</directory>
@@ -291,15 +299,9 @@
                                 </resource>
                             </resources>
                         </configuration>
-                        <goals>
-                            <goal>resources</goal>
-                        </goals>
-                        <id>add-generated-yaml</id>
-                        <phase>generate-resources</phase>
+
                     </execution>
                 </executions>
-                <groupId>org.apache.maven.plugins</groupId>
-                <version>3.2.0</version>
             </plugin>
 
         </plugins>
