@@ -192,11 +192,6 @@
                     <artifactId>maven-dependency-plugin</artifactId>
                     <version>3.3.0</version>
                 </plugin>
-                <plugin>
-                    <groupId>org.ec4j.maven</groupId>
-                    <artifactId>editorconfig-maven-plugin</artifactId>
-                    <version>0.1.3</version>
-                </plugin>
             </plugins>
         </pluginManagement>
     </build>
