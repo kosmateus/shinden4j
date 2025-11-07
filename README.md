@@ -45,7 +45,7 @@ To use this library, add the following to your build configuration:
 
 <repositories>
     <repository>
-        <id>jitpack</id>
+        <id>jitpack.io</id>
         <url>https://jitpack.io</url>
     </repository>
 </repositories>
@@ -56,9 +56,9 @@ To use this library, add the following to your build configuration:
 ```xml
 
 <dependency>
-    <groupId>com.github.kosmateus</groupId>
-    <artifactId>shinden4j</artifactId>
-    <version>1.0.0</version>
+    <groupId>com.github.kosmateus.shinden4j</groupId>
+    <artifactId>shinden-api</artifactId>
+    <version>1.0.7</version>
 </dependency>
 ```
 
@@ -67,15 +67,21 @@ To use this library, add the following to your build configuration:
 1. Add JitPack repository to your `build.gradle`:
 
 ```gradle
-repositories {
-    maven { url 'https://jitpack.io' }
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+    }
 }
 ```
 
 2. Add the dependency:
 
 ```gradle
-implementation 'com.github.kosmateus:shinden4j:1.0.0'
+dependencies {
+    implementation 'com.github.kosmateus.shinden4j:shinden-api:1.0.7'
+}
 ```
 
 ## Quick Start
