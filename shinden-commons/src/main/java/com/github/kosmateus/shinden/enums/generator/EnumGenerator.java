@@ -102,6 +102,16 @@ public class EnumGenerator {
         sb.append("import java.util.stream.Stream;\n");
         sb.append("import lombok.Getter;\n");
         sb.append("import ").append(Tag.class.getCanonicalName()).append(";\n\n");
+        sb.append("/**\n");
+        sb.append(" * WARNING: This is an auto-generated class!\n");
+        sb.append(" *\n");
+        sb.append(" * DO NOT MODIFY this file manually. Any changes will be overwritten.\n");
+        sb.append(" *\n");
+        sb.append(" * To regenerate this class, run:\n");
+        sb.append(" *   mvn clean compile -pl shinden-enums -am -Pgenerate-enums\n");
+        sb.append(" *\n");
+        sb.append(" * Generated: ").append(java.time.LocalDateTime.now().format(java.time.format.DateTimeFormatter.ISO_LOCAL_DATE_TIME)).append("\n");
+        sb.append(" */\n");
         sb.append("@Getter\n");
         sb.append("public enum ").append(p.className).append(" implements Tag {\n");
 
@@ -243,6 +253,14 @@ public class EnumGenerator {
 
         try (FileOutputStream fos = new FileOutputStream(yamlFile);
              OutputStreamWriter osw = new OutputStreamWriter(fos, StandardCharsets.UTF_8)) {
+            osw.write("# WARNING: This is an auto-generated file!\n");
+            osw.write("#\n");
+            osw.write("# DO NOT MODIFY this file manually. Any changes will be overwritten.\n");
+            osw.write("#\n");
+            osw.write("# To regenerate this file, run:\n");
+            osw.write("#   mvn clean compile -pl shinden-enums -am -Pgenerate-enums\n");
+            osw.write("#\n");
+            osw.write("# Generated: " + java.time.LocalDateTime.now().format(java.time.format.DateTimeFormatter.ISO_LOCAL_DATE_TIME) + "\n\n");
             yaml.dump(root, osw);
         }
         log.info("Updated translations in {}", yamlFile.getAbsolutePath());

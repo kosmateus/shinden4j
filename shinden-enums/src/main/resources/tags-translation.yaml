@@ -1,0 +1,2640 @@
+# WARNING: This is an auto-generated file!
+#
+# DO NOT MODIFY this file manually. Any changes will be overwritten.
+#
+# To regenerate this file, run:
+#   mvn clean compile -pl shinden-enums -am -Pgenerate-enums
+#
+# Generated: 2025-11-07T18:09:02.468109
+
+tags:
+  studio:
+    10gauge: 10Gauge
+    12-diary-holders: 12 Diary Holders
+    1in: 1IN
+    1st-place: 1st PLACE
+    2-10-animation: 2:10 Animation
+    3xcube: 3xCube
+    4kids-entertainment: 4Kids Entertainment
+    4tune: 4tune
+    5-inc: 5 Inc.
+    501st-joint-fighter-wing: 501st JOINT FIGHTER WING
+    5pb: 5pb.
+    81-produce: 81 Produce
+    8bit: 8bit
+    a-line: A Line
+    a-1-pictures: A-1 Pictures
+    a-craft: A-Craft
+    a-real: A-real
+    a-sketch: A-Sketch
+    a-c-g-t: A.C.G.T.
+    abc-animation: ABC Animation
+    abema-tv: Abema TV
+    abj-company: ABJ COMPANY
+    ac-create: AC Create
+    academy-productions: Academy Productions
+    acc-production: ACC Production
+    acca-effe: Acca Effe
+    acchi-kocchi-production-committee: Acchi Kocchi Production Committee
+    ace-creation: Ace Creation
+    acid-film: ACiD FiLM
+    actas: Actas
+    active: Active
+    adk-marketing-solutions: ADK Marketing Solutions
+    adores: Adores
+    adult-source-media: Adult Source Media
+    adv-films: ADV Films
+    advance-syakujii: Advance Syakujii
+    aera-laboratory: Aera Laboratory
+    age: Age
+    age-global-networks: Age Global Networks
+    agent-21: Agent 21
+    ai-addiction: Ai Addiction
+    ai-ga-areba-daijobu: Ai ga areba Daijobu
+    ai-si-animation-studio: Ai Si Animation Studio
+    aic: AIC
+    aic-a-s-t-a: AIC A.S.T.A.
+    aic-build: AIC Build
+    aic-classic: AIC Classic
+    aic-frontier: AIC Frontier
+    aic-plus: AIC Plus+
+    aic-spirits: AIC Spirits
+    aic-takarazuka: AIC Takarazuka
+    aichi-television-broadcasting: Aichi Television Broadcasting
+    aikikaku-center: Aikikaku Center
+    aiko: Aiko
+    air-agency: AIR AGENCY
+    ajia-do: Ajia-Do
+    akatsuki: Akatsuki
+    akb0048-production-committee: AKB0048 Production Committee
+    akita-shoten: Akita Shoten
+    akom: AKOM
+    alchemist: Alchemist
+    alice-soft: Alice Soft
+    allure: Allure
+    alpha-group: Alpha Group
+    amber-film-works: Amber Film Works
+    amg-music: AMG MUSIC
+    amino: Amino
+    amuse: Amuse
+    amuse-soft-entertainme: Amuse Soft Entertainme
+    amusement-media-academy: Amusement Media Academy
+    an-dercen: An DerCen
+    anchor-bay-films: Anchor Bay Films
+    angelfish: Angelfish
+    anihouse-sun: Anihouse Sun
+    anik: ANIK
+    animac: Animac
+    animan: AniMan
+    animaruya: Animaruya
+    animate-film: Animate Film
+    animatic: Animatic
+    animation-21: Animation 21
+    animation-do: Animation Do
+    animatsu-entertainment: Animatsu Entertainment
+    animax: Animax
+    anime-antenna-iinkai: Anime Antenna Iinkai
+    anime-beans: Anime Beans
+    anime-consortium-japan: Anime Consortium Japan
+    anime-hodai: Anime Hōdai
+    anime-innovation-tokyo: Anime Innovation Tokyo
+    anime-midstream: Anime Midstream
+    anime-r: Anime R
+    anime-torotoro: Anime Torotoro
+    anime-world-osaka: Anime World Osaka
+    animeigo: Animeigo
+    animesh: Animesh
+    aniplex: Aniplex
+    aniplex-of-america: Aniplex of America
+    aniplus-asia: Aniplus Asia
+    anitus-kobe: Anitus Kōbe
+    ankama: Ankama
+    annapuru: Annapuru
+    anpro: Anpro
+    aoi-studio: Aoi Studio
+    aoshashin: Aoshashin
+    apdream: Apdream
+    apollon: Apollon
+    appp: APPP
+    aqua-aris: AQUA ARIS
+    aquaplus: AQUAPLUS
+    arcs-create: Arcs Create
+    arect: Arect
+    armor: Armor
+    arms: Arms
+    arplants: Arplants
+    art-anime-studio: Art Anime Studio
+    art-base-bam: Art Base Bam
+    art-max: Art Max
+    artemis: Artemis
+    artist-management-office: Artist Management Office
+    artland: Artland
+    artmic: Artmic
+    arvo-animation: Arvo Animation
+    asahi-broadcasting: Asahi Broadcasting
+    asahi-production: Asahi Production
+    asahi-production-shiroishi-studio: Asahi Production Shiroishi Studio
+    asahi-shimbun: Asahi Shimbun
+    asatsu-dk: Asatsu DK
+    ascension: Ascension
+    ascii-media-works: ASCII Media Works
+    ashi-productions: Ashi Productions
+    asia-animation: Asia Animation
+    asia-documentary-productions: ASIA Documentary Productions
+    asia-do: Asia-Do
+    ask-animation-studio: ASK Animation Studio
+    asmik-ace-entertainment: Asmik Ace Entertainment
+    asread: Asread
+    assez-finaud-fabric: Assez Finaud Fabric
+    astarotte-no-omocha-production-committee: Astarotte no Omocha! Production Committee
+    asura-film: Asura Film
+    at-2: AT-2
+    at-x: AT-X
+    atelier-musa: Atelier Musa
+    atelier-platz: Atelier Platz
+    atlus: Atlus
+    aubec: Aubec
+    audio-highs: Audio Highs
+    audio-planning-u: Audio Planning U
+    automatic-flowers-studio: Automatic Flowers Studio
+    avaco-creative-studios: Avaco Creative Studios
+    avex-entertainment: Avex Entertainment
+    avex-pictures: Avex Pictures
+    axsiz: AXsiZ
+    ayco: AYCO
+    az-creative: AZ Creative
+    azeta-pictures: Azeta Pictures
+    azumanga-daioh-production-committee: Azumanga Daioh Production Committee
+    b-t: B&T
+    b-t-studio: B&T Studio
+    b-cmay-pictures: B.CMAY PICTURES
+    b-s-p: B.S.P
+    baku-production: Baku Production
+    balcolony: Balcolony
+    bandai: Bandai
+    bandai-channel: Bandai Channel
+    bandai-entertainment: Bandai Entertainment
+    bandai-namco-arts: Bandai Namco Arts
+    bandai-namco-entertainment: Bandai Namco Entertainment
+    bandai-namco-filmworks: Bandai Namco Filmworks
+    bandai-namco-games: Bandai Namco Games
+    bandai-namco-live-creative: Bandai Namco Live Creative
+    bandai-namco-music-live: Bandai Namco Music Live
+    bandai-namco-pictures: Bandai Namco Pictures
+    bandai-spirits: Bandai Spirits
+    bandai-visual: Bandai Visual
+    bandai-visual-usa: Bandai Visual USA
+    banpresto: Banpresto
+    baramiri: Baramiri
+    barnum-studio: Barnum Studio
+    be-loop: Be Loop
+    beam-entertainment: BEAM Entertainment
+    beat-frog: Beat Frog
+    bee-media: Bee Media
+    bee-train: Bee Train
+    beep: Beep
+    beeworks: BeeWorks
+    beijing-enlight-pictures: Beijing Enlight Pictures
+    beijing-rocen-digital: Beijing Rocen Digital
+    beijing-sharaku-art: Beijing Sharaku Art
+    beijing-xie-le-art: Beijing Xie Le Art
+    being: Being
+    benesse-corporation: Benesse Corporation
+    bestack: BeSTACK
+    beyond-c: Beyond C.
+    bibury-animation-cg: Bibury Animation CG
+    bibury-animation-studios: Bibury Animation Studios
+    big-bang: Big Bang
+    big-owl: Big Owl
+    big-west: Big West
+    bigfirebird-animation: BigFireBird Animation
+    biglobe: BIGLOBE
+    bilibili: bilibili
+    bird: Bird
+    bit-grooove-promotion: Bit grooove promotion
+    bit-promotion: Bit Promotion
+    blade: BLADE
+    bliss-pictures: Bliss Pictures
+    blue-cat: Blue Cat
+    blue-eyes: Blue Eyes
+    bmg-japan: BMG Japan
+    bones: Bones
+    bootleg: BOOTLEG
+    bouncy: Bouncy
+    brain-s-base: Brain's Base
+    brave-hearts: Brave Hearts
+    breakbottle: BreakBottle
+    bridge: Bridge
+    brio-animation: Brio Animation
+    broccoli: Broccoli
+    bs-asahi: BS Asahi
+    bs-fuji: BS Fuji
+    bs-japan: BS Japan
+    bs-ntv: BS NTV
+    bs-i: BS-i
+    bs-tbs: BS-TBS
+    bug-films: BUG FILMS
+    bulls-eye: Bulls Eye
+    bunny-walker: BUNNYWALKER
+    bushiroad: Bushiroad
+    bushiroad-inc: Bushiroad Inc.
+    byakuya-shobo: Byakuya Shobo
+    byment: BYMENT
+    c-station: C-Station
+    c2c: C2C
+    calf-studio: Calf Studio
+    cammot: Cammot
+    candy-box: Candy Box
+    capcom: Capcom
+    caribara-production: Caribara Production
+    carp-studio: Carp Studio
+    cascade: Cascade
+    casio-entertainment: Casio Entertainment
+    cbc: CBC
+    cbs-sony-group-inc: CBS Sony Group, Inc.
+    cctv-animation: CCTV Animation
+    central-park-media: Central Park Media
+    ch-production: CH Production
+    chaos-project: Chaos Project
+    character-and-anime-dot-com: Character and Anime Dot Com
+    charaction: Charaction
+    cheng-pin-animation: Cheng Pin Animation
+    cherrylips: CherryLips
+    chichinoya: ChiChinoya
+    children-s-playground-entertainment: Children's Playground Entertainment
+    china-literature-limited: China Literature Limited
+    chippai: Chippai
+    chiptune: Chiptune
+    chocolate: CHOCOLATE
+    chrono-gear-creative: Chrono Gear Creative
+    chukyo-tv-broadcasting: Chukyo TV Broadcasting
+    chungeorahm-film: Chungeorahm Film
+    cinema-tohoku: Cinema Tohoku
+    cjt: CJT
+    clap: CLAP
+    cloud-art: Cloud Art
+    cloud22: Cloud22
+    cloverworks: CloverWorks
+    coamix: Coamix
+    code: Code
+    collaboration-works: Collaboration Works
+    colopl: COLOPL
+    color-smile: Color & Smile
+    colored-pencil-animation-design: Colored-Pencil Animation Design
+    comic-animation: Comic Animation
+    comico: Comico
+    comicsmart: COMICSMART
+    comix-wave-films: CoMix Wave Films
+    comptown: CompTown
+    comstock-ltd: Comstock, Ltd.
+    congzhuo-animation: Congzhuo Animation
+    connect: Connect
+    contents-seed: Contents Seed
+    cookie-jar-entertainment: Cookie Jar Entertainment
+    core: Core
+    cosmic-ray: Cosmic Ray
+    cosmos: Cosmos
+    cospa: Cospa
+    cotton-doll: Cotton Doll
+    craftar: Craftar
+    cranberry: Cranberry
+    creative-bridge: Creative Bridge
+    creators-in-pack: Creators in Pack
+    crimson-star-media: Crimson Star Media
+    critical-mass: Critical Mass
+    crossphere: Crossphere
+    crunchyroll: Crunchyroll
+    cyberconnect2: CyberConnect2
+    cyberstep: CyberStep
+    cyclone-graphics-inc: Cyclone Graphics inc
+    cygames: Cygames
+    cygamespictures: CygamesPictures
+    d-colors: D-Colors
+    d-motion: D-Motion
+    d-rights: d-rights
+    d-a-s-t: D.A.S.T.
+    d-n-dreampartners: D.N.dreampartners
+    d3: D3
+    daewon-media: Daewon Media
+    dai-nippon-printing: Dai Nippon Printing
+    daiei: Daiei
+    daiichikosho: Daiichikosho
+    daiko: Daiko
+    dandelion-animation-studio-llc: DandeLion Animation Studio LLC
+    daume: Daume
+    david-production: David Production
+    dax-production: DAX Production
+    dc-impression-vision: DC Impression Vision
+    defa: DEFA
+    delfi-sound: Delfi Sound
+    delightworks: Delightworks
+    delphi-sound: Delphi Sound
+    dena: DeNA
+    dentsu: Dentsu
+    dentsu-entertainment-usa: Dentsu Entertainment USA
+    dentsu-tec: Dentsu Tec
+    detective-conan-production-committee: Detective Conan Production Committee
+    devil-survivor-2-animation-committee: Devil Survivor 2 Animation Committee
+    dibetagurashi-production-committee: Dibetagurashi Production Committee
+    dic-entertainment: DiC Entertainment
+    digital-frontier: Digital Frontier
+    digital-media-lab: Digital Media Lab
+    digital-noise: Digital Noise
+    digital-works: Digital Works
+    diomedea: Diomedea
+    directions: Directions
+    discotek: Discotek
+    discotek-media: Discotek Media
+    discovery: Discovery
+    dive-ii-entertainment: DIVE II Entertainment
+    dji: DJI
+    dle: DLE
+    dmm-music: DMM Music
+    dmm-pictures: DMM pictures
+    dmm-com: DMM.com
+    dmm-futureworks: DMM.futureworks
+    docomo-anime-store: Docomo Anime Store
+    doga-kobo: Doga Kobo
+    doga-productions: DOGA Productions
+    dogwood: Dogwood
+    domerica: domerica
+    dongwoo-animation: Dongwoo Animation
+    dr-movie: DR Movie
+    dream-creation: Dream Creation
+    dream-force: Dream Force
+    drive: Drive
+    drop: drop
+    dtv: dTV
+    dugout: dugout
+    dwango: Dwango
+    dwango-music-entertainment: Dwango Music Entertainment
+    dwarf: dwarf
+    dynamic-planning: Dynamic Planning
+    dynamo-pictures: Dynamo Pictures
+    e-g-films: E&G Films
+    e-h-production: E&H Production
+    earth-star-entertainment: Earth Star Entertainment
+    easia: Easia
+    east-fish-studio: East Fish Studio
+    east-japan-marketing-communications: East Japan Marketing & Communications
+    easy-film: Easy Film
+    echo: Echo
+    edge: EDGE
+    editz: Editz
+    egg: Egg
+    egg-firm: Egg Firm
+    eiken: Eiken
+    ekura-animal: Ekura Animal
+    electromagneticwave: ElectromagneticWave
+    elevenarts: Elevenarts
+    emi: EMI
+    emon: Emon
+    emt: EMT²
+    encourage-films: Encourage Films
+    engi: ENGI
+    enoki-films: Enoki Films
+    ensemble: ensemble
+    enterbrain: Enterbrain
+    epoch: Epoch
+    evergreen: EverGreen
+    exa-international: Exa International
+    exit-tunes: Exit Tunes
+    eye-move: Eye Move
+    ez-la: Ezόla
+    f-m-f: F.M.F
+    fai-international: FAI International
+    fairy-dust: Fairy Dust
+    famima-com: famima.com
+    fanout: Fanout
+    fanworks: Fanworks
+    feel: feel.
+    felix-film: Felix Film
+    feng: feng
+    fenz: Fenz
+    fields: Fields
+    fifth-avenue: Fifth Avenue
+    film-workshop: Film Workshop
+    filmlink-international: Filmlink International
+    five-eighth: Five Eighth
+    five-ways: Five Ways
+    flagship-line: FLAGSHIP LINE
+    flat-studio: Flat Studio
+    flatiron-film-company: Flatiron Film Company
+    flavors-soft: Flavors Soft
+    flex-comics: Flex Comics
+    flying-dog: flying DOG
+    forecast-communications: Forecast Communications
+    forest-hunting-one: FOREST Hunting One
+    four-some: Four Some
+    front-line: Front Line
+    frontier-works: Frontier Works
+    fse: FSE
+    fuji-gumi-games: Fuji & gumi Games
+    fuji-creative: Fuji Creative
+    fuji-pacific-music-publishing: Fuji Pacific Music Publishing
+    fuji-tv: Fuji TV
+    fuji-video: Fuji Video
+    fujimi-shobo: Fujimi Shobo
+    fukuoka-broadcasting-system: Fukuoka Broadcasting System
+    funimation: Funimation
+    furyu: Furyu
+    futabasha: Futabasha
+    future-planet: Future Planet
+    g-g-entertainment: G&G Entertainment
+    g-mode: G-mode
+    g-cmay-animation-film: G.CMay Animation & Film
+    gaga: GAGA
+    gaga-communications: GAGA Communications
+    fukushima-gainax: Gaina
+    gainax: Gainax
+    gakken: Gakken
+    gakken-eigakyoku: Gakken Eigakyoku
+    gambit: Gambit
+    gansis: GANSIS
+    gantaku: Gantaku
+    garden-culture: Garden Culture
+    gathering: Gathering
+    gdh: GDH
+    geektoys: GEEKTOYS
+    gekkou: Gekkou
+    gemba: GEMBA
+    gen-productions: GEN Productions
+    genco: Genco
+    gendai-production: Gendai Production
+    geneon-entertainment-usa: Geneon Entertainment USA
+    geneon-universal-entertainment: Geneon Universal Entertainment
+    geno-studio: Geno Studio
+    gentosha-comics: Gentosha Comics
+    gift-o-animation: Gift-o`-Animation
+    giga-production: Giga Production
+    gimik: gimik
+    ginga-ya: Ginga Ya
+    gk-sales: GK Sales
+    gkids: GKids
+    glams: Glams
+    global-solutions: Global Solutions
+    glovision: Glovision
+    godxdog-production: GODxDOG Production
+    gohands: GoHands
+    gonzo: Gonzo
+    good-job-tokyo: Good Job Tokyo
+    good-smile-company: Good Smile Company
+    good-smile-film: Good Smile Film
+    got: GOT
+    grain: Grain
+    graphinica: Graphinica
+    graphinica-asagaya-studio: Graphinica Asagaya Studio
+    grasshoppa: Grasshoppa!
+    gree: Gree
+    green-bunny: Green Bunny
+    green-monster-team: Green Monster Team
+    greenwood: Greenwood
+    grizzly: GRIZZLY
+    grooove: Grooove
+    group-tac: Group TAC
+    grouper-productions: Grouper Productions
+    gyao: GYAO!
+    gyeong-gang-ania: Gyeong Gang Ania
+    h-o-t-d-production-committee: H.O.T.D Production Committee
+    hadashi-pro: Hadashi Pro
+    hakoniwa-academy-student-council: Hakoniwa Academy Student Council
+    hakuhodo-dy-media-partners: Hakuhodo DY Media Partners
+    hakuhodo-dy-music-pictures: Hakuhodo DY Music & Pictures
+    hakusensha: Hakusensha
+    hal-film-maker: Hal Film Maker
+    half-h-p-studio: Half H.P Studio
+    hang-zhou-starq: Hang Zhou StarQ
+    hanil-animation: Hanil Animation
+    hanjin-animation: Hanjin Animation
+    haoliners-animation-league: Haoliners Animation League
+    happinet: Happinet
+    happinet-pictures: Happinet Pictures
+    harappa: Harappa
+    hasbro: Hasbro
+    hatsukoi-limited-production-committee: Hatsukoi Limited Production Committee
+    hayabusa-film: Hayabusa Film
+    heart-company: Heart Company
+    hebaraki: Hebaraki
+    heewon-entertainment: Heewon Entertainment
+    hero-communication: Hero Communication
+    heroz: Heroz
+    hidive: HIDIVE
+    higa-brothers-production: Higa Brothers Production
+    hiiro-no-kakera-production-committee: Hiiro No Kakera Production Committee
+    hikari-no-sono-animation: Hikari no Sono Animation
+    hikari-tv: Hikari TV
+    himajin-planning: Himajin Planning
+    himeyuri-alumnae-incorporated-foundation: Himeyuri Alumnae Incorporated Foundation
+    hiroshima-television: Hiroshima Television
+    hiwa: Hiwa
+    hobby-japan: Hobby Japan
+    hobi-animation: Hobi Animation
+    hobibox: Hobibox
+    hoods-drifters-studio: Hoods Drifters Studio
+    hoods-entertainment: Hoods Entertainment
+    horannabi: Horannabi
+    horipro: Horipro
+    hoso-seisaku-doga: Hoso Seisaku Doga
+    hot-bear: Hot Bear
+    hotline: Hotline
+    hotzipang: HOTZIPANG
+    houbunsha: Houbunsha
+    huamei-animation: HuaMei Animation
+    hulu: Hulu
+    huoniao-donghua: Huoniao Donghua
+    husio-studio: Husio Studio
+    hybrid-labo: Hybrid Labo
+    hyoin-animation: Hyoin Animation
+    i-will: I Will
+    i-move: I-move
+    i-toon: I.Toon
+    i0: i0+
+    ichigo-animation: Ichigo Animation
+    idea-factory: Idea Factory
+    ilca: Ilca
+    im-studio: IM Studio
+    image-house: Image House
+    image-kei: Image Kei
+    imagi: Imagi
+    imagica: Imagica
+    imagica-entertainment-media-services: Imagica Entertainment Media Services
+    imagin: Imagin
+    imagine: Imagine
+    imagineer: Imagineer
+    inaho: Inaho
+    incs-toenter: INCS Toenter
+    indeprox: Indeprox
+    index: Index
+    indigo-line: indigo line
+    infinite: Infinite
+    ing: ING
+    ingres: Ingres
+    innocent-grey: Innocent Grey
+    international-digital-artist: International Digital Artist
+    inu-x-boku-ss-production-partners: Inu x Boku SS Production Partners
+    inugane-planning: Inugane Planning
+    iqiyi: iQIYI
+    iris-media: Iris Media
+    ishikawa-pro: Ishikawa Pro
+    issen: Issen
+    itasca-studio: Itasca Studio
+    iwatobi-high-school-swimming-club: Iwatobi High School Swimming Club
+    ixtl: Ixtl
+    iyasakadou-film: Iyasakadou Film
+    j-k-corporation: J&K Corporation
+    j-cube: J-Cube
+    j-c-staff: J.C.Staff
+    j-com: J:COM
+    jade-animation: Jade Animation
+    jam: Jam
+    japan-aerospace-exploration-agency: Japan Aerospace Exploration Agency
+    japan-home-video: Japan Home Video
+    japan-vistec: Japan Vistec
+    japananime: JapanAnime
+    jay-zone-comic: Jay Zone Comic
+    jinnan-studio: Jinnan Studio
+    jinnis-animation-studios: Jinnis Animation Studios
+    jiwoo-animation: Jiwoo Animation
+    jm-animation: JM animation
+    jormungand-production-partners: Jormungand Production Partners
+    jr-east-marketing-communications: JR East Marketing & Communications
+    jtb-entertainment: JTB Entertainment
+    jtb-next-creation: JTB Next Creation
+    jumondo: Jumondo
+    just-pro: Just Pro
+    just-production: Just Production
+    juumonji: Juumonji
+    jy-animation: JY Animation
+    k-production: K Production
+    kaca-entertainment: Kaca Entertainment
+    kachidoki-studio: Kachidoki Studio
+    kadokawa: Kadokawa
+    kadokawa-contents-gate: Kadokawa Contents Gate
+    kadokawa-media-house: Kadokawa Media House
+    kadokawa-media-taiwan: Kadokawa Media Taiwan
+    kadokawa-pictures-japan: Kadokawa Pictures Japan
+    kadokawa-pictures-usa: Kadokawa Pictures USA
+    kadokawa-shoten: Kadokawa Shoten
+    kaeruotoko-shokai: Kaeruotoko Shokai
+    kagaya-studio: KAGAYA Studio
+    kagura: Kagura
+    kamikaze-douga: Kamikaze Douga
+    kanaban-graphics: Kanaban Graphics
+    kaname-productions: Kaname Productions
+    kanetsu-co-ltd: Kanetsu Co., LTD.
+    kanon-sound: Kanon Sound
+    kansai-telecasting: Kansai Telecasting
+    kansai-telecasting-corporation: Kansai Telecasting Corporation
+    kappa-entertainment: Kappa Entertainment
+    karaku: Karaku
+    katsudou-manga-kan: Katsudou-manga-kan
+    kawamoto-productions: Kawamoto Productions
+    kazami-gakuen-koushiki-douga-bu: Kazami Gakuen Koushiki Douga-bu
+    kbs: KBS
+    kddi: KDDI
+    ken-on: KEN ON
+    kenji-studio: Kenji Studio
+    kenmedia: KENMedia
+    key: Key
+    kids-station: Kids Station
+    kill-time-communication: Kill Time Communication
+    kimi-to-boku-production-partners: Kimi To Boku Production Partners
+    kinema-citrus: Kinema Citrus
+    king-bee: King Bee
+    king-records: King Records
+    kino-production: Kino Production
+    kinoshita-group-holdings: Kinoshita Group Holdings
+    kinoshita-koumuten: Kinoshita Koumuten
+    kinyosha: Kinyosha
+    kirksville: Kirksville
+    kitty-films: Kitty Films
+    kitty-media: Kitty Media
+    kiyosumi-high-school-mahjong-club: Kiyosumi High School Mahjong Club
+    kjj-animation: KJJ Animation
+    klockworx: KlockWorx
+    kmmj-studios: KMMJ Studios
+    knack-animation: Knack Animation
+    knack-productions: Knack Productions
+    kodansha: Kodansha
+    koei: Koei
+    koichi-kikuchi: Koichi Kikuchi
+    kojiro-shishido-animation-works: Kojiro Shishido Animation Works
+    kokusai-eigasha: Kokusai Eigasha
+    konami: Konami
+    koo-ki: KOO-KI
+    korean-academy-of-film-arts: Korean Academy of Film Arts
+    kotowari: Kotowari
+    kss: KSS
+    kuri-jikken-manga-kobo: Kuri Jikken Manga Kobo
+    kyodo-eiga: Kyodo Eiga
+    kyokuichi-tokyo-movie-shinsha: Kyokuichi Tokyo Movie Shinsha
+    kyoraku-industrial-holdings: Kyoraku Industrial Holdings
+    kyoto-animation: Kyoto Animation
+    kyotoma: Kyotoma
+    kyowa-film: Kyowa Film
+    kyung-kang-ania: Kyung Kang ANIA
+    kyushu-animation: Kyushu Animation
+    lambert: Lambert
+    lan-studio: Lan Studio
+    landq-studio: LandQ Studio
+    langmaor: Langmaor
+    lantis: Lantis
+    lapintrack: Lapintrack
+    lapis: Lapis
+    larx-entertainment: Larx Entertainment
+    lawson: Lawson
+    lawson-hmv-entertainment: Lawson HMV Entertainment
+    lay-duce: Lay-duce
+    legendoor: Legendoor
+    lemon-heart: Lemon Heart
+    lerche: Lerche
+    lesprit: Lesprit
+    level-5: Level-5
+    lico: LICO
+    lidenfilms: LIDENFILMS
+    life-work: Life Work
+    light-chaser-animation-studios: Light Chaser Animation Studios
+    lilix: Lilix
+    line-corporation: LINE Corporation
+    line-farm: Line Farm
+    ling-san-wu-donghua: Ling San Wu Donghua
+    liverpool: Liverpool
+    lmd: LMD
+    lucent-pictures-entertainment: Lucent Pictures Entertainment
+    lucky-paradise: Lucky Paradise
+    lune-pictures: Lune Pictures
+    l-studio: L²Studio
+    m-o-e: m.o.e.
+    m-s-c: M.S.C
+    m-s-j-musashino-production: M.S.J Musashino Production
+    m2: M2
+    mad-box: Mad Box
+    madhouse: Madhouse
+    madoka-partners: Madoka Partners
+    mag-garden: Mag Garden
+    mages: MAGES.
+    magic-bus: Magic Bus
+    magic-capsule: Magic Capsule
+    magic-lantern-film: Magic Lantern Film
+    magnet: MAGNET
+    maho-film: Maho Film
+    maiden-japan: Maiden Japan
+    maikaze: Maikaze
+    mainichi-broadcasting-system: Mainichi Broadcasting System
+    mainichi-shimbun: Mainichi Shimbun
+    majin: Majin
+    makaria: Makaria
+    maki-pro: Maki Pro
+    manga-entertainment: Manga Entertainment
+    manglobe: Manglobe
+    mappa: MAPPA
+    marco: Marco
+    marine-entertainment: Marine Entertainment
+    maro-studio: Maro Studio
+    maru-production: Maru Production
+    marubeni: Marubeni
+    marui-group: Marui Group
+    marvel-entertainment: Marvel Entertainment
+    marvelous: Marvelous
+    marvelous-aql: Marvelous AQL
+    marvelous-entertainment: Marvelous Entertainment
+    marvy-jack: Marvy Jack
+    mary-jane: Mary Jane
+    marza-animation-planet: Marza Animation Planet
+    maverica: Maverica
+    maxell-e-cube: Maxell E-Cube
+    mcray: McRay
+    media-blasters: Media Blasters
+    media-do: Media Do
+    media-factory: Media Factory
+    mediabank: MEDIABANK
+    medianet: MediaNet
+    medicos-entertainment: Medicos Entertainment
+    medicrie: Medicrie
+    mellow-head: Mellow Head
+    memory-tech: Memory-Tech
+    micro-magazine-publishing: Micro Magazine Publishing
+    mihoyoanime: miHoYoAnime
+    mikakunin-de-shinkoukei-production-committee: Mikakunin de Shinkoukei Production Committee
+    milestone-music-publishing: Milestone Music Publishing
+    mili-pictures: Mili Pictures
+    milkshake: Milkshake
+    milky-animation-label: Milky Animation Label
+    milky-cartoon: Milky Cartoon
+    millepensee: Millepensee
+    minami-machi-bugyousho: Minami Machi Bugyousho
+    miracle-robo: Miracle Robo
+    miramax-films: Miramax Films
+    misseri-studio: Misseri Studio
+    mixer: Mixer
+    miyagi-television-broadcasting: Miyagi Television Broadcasting
+    mk-seoul: MK Seoul
+    mk-za: MK-Za
+    mmdgp: MMDGP
+    mobcast: Mobcast
+    mobius-tone: Möbius Tone
+    mokai-technology: Mokai Technology
+    monaca: Monaca
+    moogoo: MooGoo
+    mook-animation: Mook Animation
+    moonstone-cherry: Moonstone Cherry
+    motion-magic: Motion Magic
+    mouse: Mouse
+    movic: Movic
+    ms-pictures: MS Pictures
+    mushi-productions: Mushi Productions
+    music-ray-n: Music Ray'n
+    my-melody-production-committee: My Melody Production Committee
+    my-theater-d-d: My Theater D.D.
+    n-g-production: N&G Production
+    nagoya-broadcasting-network: Nagoya Broadcasting Network
+    nagoya-tv-housou: Nagoya TV Housou
+    nakamura-production: Nakamura Production
+    namu-animation: Namu Animation
+    nara-animation: Nara Animation
+    natsuiro-kiseki-production-partners: Natsuiro Kiseki Production Partners
+    natural-high: Natural High
+    naz: NAZ
+    nbcuniversal-entertainment: NBCUniversal Entertainment
+    nbcuniversal-entertainment-japan: NBCUniversal Entertainment Japan
+    nelvana: Nelvana
+    netease: NetEase
+    netflix: Netflix
+    new-generation: New Generation
+    nexon: Nexon
+    next-media-animation: Next Media Animation
+    nexus: Nexus
+    nhk: NHK
+    nhk-enterprises: NHK Enterprises
+    nhk-bs2: NHK-BS2
+    nichiei-agency: Nichiei Agency
+    nichinare: NichiNare
+    nichion: Nichion
+    niconico: Niconico
+    nihikime-no-dozeu: Nihikime no Dozeu
+    nihon-ad-systems: Nihon Ad Systems
+    nihon-bungeisha: Nihon Bungeisha
+    nihon-falcom: Nihon Falcom
+    nihon-hoso-eigasha: Nihon Hoso Eigasha
+    nikkatsu: Nikkatsu
+    nikkatsu-mukojima: Nikkatsu Mukojima
+    nikkatsu-video: Nikkatsu Video
+    nintendo-co-ltd: Nintendo Co., Ltd.
+    nintendo-of-america: Nintendo of America
+    nippon-animation: Nippon Animation
+    nippon-bs-broadcasting-corporation: Nippon BS Broadcasting Corporation
+    nippon-columbia: Nippon Columbia
+    nippon-cultural-broadcasting: Nippon Cultural Broadcasting
+    nippon-ichi-software: Nippon Ichi Software
+    nippon-shuppan-hanbai-nippan-k-k: Nippon Shuppan Hanbai (Nippan) K.K.
+    nippon-television-music: Nippon Television Music
+    nippon-television-network-corporation: Nippon Television Network Corporation
+    nis-america-inc: NIS America, Inc.
+    nishinippon-broadcasting: Nishinippon Broadcasting
+    nitroplus: Nitroplus
+    no-side: No Side
+    nomad: Nomad
+    notes: Notes
+    nottv: NOTTV
+    nozomi-entertainment: Nozomi Entertainment
+    ntt-docomo: NTT Docomo
+    ntt-plala: NTT Plala
+    ntv-music: NTV Music
+    nur: Nur
+    nutech-digital: NuTech Digital
+    nyav-post: NYAV Post
+    ob-planning: OB Planning
+    obtain-future: Obtain Future
+    oddjob: Oddjob
+    office-ao: Office AO
+    office-dci: office DCI
+    office-take-off: Office Take Off
+    office-takeout: Office Takeout
+    oh-production: Oh! Production
+    okuruto-noboru: Okuruto Noboru
+    ole-m: OLE-M
+    olive-studio: Olive Studio
+    oriental-light-and-magic: OLM
+    olm-asia: OLM Asia
+    olm-digital: OLM Digital
+    omnibus-japan: Omnibus Japan
+    on-lead: On-Lead
+    one-order: ONE ORDER
+    opera-house: Opera House
+    orange: Orange
+    ordet: Ordet
+    oriental-creative-color: Oriental Creative Color
+    original-force: Original Force
+    otogi-production: Otogi Production
+    otoiro: OTOIRO
+    overlap: Overlap
+    oxybot: Oxybot
+    oz: Oz
+    p-productions: P Productions
+    p-a-works: P.A. Works
+    p-i-c-s: P.I.C.S.
+    painting-dream: Painting Dream
+    palm-studio: Palm Studio
+    panda-kojo: Panda Kojo
+    panmedia: Panmedia
+    paper-animation: Paper Animation
+    paper-plane: Paper Plane
+    pashmina: Pashmina
+    passione: Passione
+    pastel: Pastel
+    pazzy-entertainment: Pazzy Entertainment
+    peec-animation: PEEC Animation
+    penta-show-studios: Penta Show Studios
+    peter-pan-creation: Peter Pan Creation
+    phoenix-entertainment: Phoenix Entertainment
+    picante-circus: Picante Circus
+    picograph: Picograph
+    picona-creative-studio: Picona Creative Studio
+    picture-magic: Picture Magic
+    pie-in-the-sky: Pie in The Sky
+    pied-piper: Pied Piper
+    pierrot-plus: Pierrot Plus
+    pikachu-project: Pikachu Project
+    pine-jam: Pine Jam
+    pink-pineapple: Pink Pineapple
+    pioneer-ldc: Pioneer LDC
+    pioneer-production: Pioneer Production
+    pixy: Pixy
+    planet: Planet
+    platinum-vision: Platinum Vision
+    plum: Plum
+    plus-heads: Plus Heads
+    plus-one: Plus One
+    po10tial: Po10tial
+    polyg: Polyg
+    polygon-pictures: Polygon Pictures
+    polygram-japan: Polygram Japan
+    poncotan: Poncotan
+    pony-canyon: Pony Canyon
+    pony-canyon-enterprise: Pony Canyon Enterprise
+    pony-canyon-enterprises: Pony Canyon Enterprises
+    ponycan-usa: Ponycan USA
+    popoco: PoPoCo
+    poro: PoRO
+    postgal-workshop: Postgal Workshop
+    ppm: PPM
+    ppp: PPP
+    pra: PRA
+    pra-sakugabu: PRA Sakugabu
+    primastea: Primastea
+    primetime: PrimeTime
+    procen-studio: Procen Studio
+    procidis: Procidis
+    production-ace: Production Ace
+    production-ai: Production Ai
+    production-en: Production EN
+    production-i-g: Production I.G
+    production-ims: Production IMS
+    production-reed: Production Reed
+    project-eureka-ao: Project Eureka AO
+    project-is: Project IS
+    project-no-name: Project No Name
+    project-no-9: Project No.9
+    project-railgun: Project Railgun
+    project-team-eikyuu-kikan: Project Team Eikyuu Kikan
+    ptc-magic: PTC Magic
+    public-basic: Public & Basic
+    pupa-production-committee: Pupa Production Committee
+    purple-cow-studio-japan: Purple Cow Studio Japan
+    puzzle-animation: Puzzle animation
+    puzzle-animation-studio-limited: Puzzle Animation Studio Limited
+    q-tec: Q-Tec
+    qooop: Qooop
+    quad: Quad
+    qualia-animation: Qualia Animation
+    quaras: Quaras
+    quatre-stella: Quatre Stella
+    queen-bee: Queen Bee
+    r-i-c: R.I.C
+    rabbit-gate: Rabbit Gate
+    radix: Radix
+    radplus: RadPlus
+    raku-high-student-council: Raku High Student Council
+    rakuonsha: Rakuonsha
+    rakuten-showtime: Rakuten ShowTime
+    rakuten-tv: Rakuten TV
+    rams: RAMS
+    rankin-bass: Rankin/Bass
+    raretrick: Raretrick
+    rastar: Rastar
+    ray: RAY
+    rcc-chugoku-broadcasting: RCC Chugoku Broadcasting
+    real-t: Real-T
+    reboot: Reboot
+    red-dog-culture-house: Red Dog Culture House
+    remic: Remic
+    revival: Revival
+    revoroot: REVOROOT
+    rg-animation-studios: RG Animation Studios
+    right-gauge: Right Gauge
+    rikuentai: Rikuentai
+    rironsha: Rironsha
+    rising-force: Rising Force
+    rme: RME
+    robot-communications: Robot Communications
+    roivisual: RoiVisual
+    romanov-films: Romanov Films
+    rondo-robe: Rondo Robe
+    rthk: RTHK
+    ruiyang-animation: Ruiyang Animation
+    ruo-hong-culture: Ruo Hong Culture
+    ryukyu-asahi-broadcasting: Ryukyu Asahi Broadcasting
+    saban-entertainment: Saban Entertainment
+    saetta: Saetta
+    saki-achiga-hen-production-committee: Saki Achiga-hen Production Committee
+    saki-zenkoku-hen-production-committee: Saki Zenkoku-hen Production Committee
+    sakura-create: Sakura Create
+    sakura-production: Sakura Production
+    salt-inc: Salt Inc.
+    sambakza: SamBakZa
+    sammy: Sammy
+    san-x: San-X
+    sankarea-production-committee: Sankarea Production Committee
+    sanrio: Sanrio
+    sanrio-digital: Sanrio Digital
+    sanzigen: SANZIGEN
+    sanzigen-animation-studio: SANZIGEN Animation Studio
+    sao-sang: Sao Sang
+    sapporo-television-broadcasting: Sapporo Television Broadcasting
+    sas: SAS
+    satelight: Satelight
+    sav-the-world-productions: Sav! The World Productions
+    sbs-tv-production: SBS TV Production
+    schoolzone: Schoolzone
+    science-saru: Science SARU
+    scooter-films: Scooter Films
+    sdm: SDM
+    seed: Seed
+    sega: Sega
+    sega-interactive: Sega Interactive
+    seigasha: Seigasha
+    seikaisha: seikaisha
+    sek-studios: SEK Studios
+    selfish: SELFISH
+    sengoku-collection-production-committee: Sengoku Collection Production Committee
+    senran-kagura-partners: Senran Kagura Partners
+    sentai-filmworks: Sentai Filmworks
+    sentai-studios: Sentai Studios
+    seta-corporation: Seta Corporation
+    seven: Seven
+    seven-arcs: Seven Arcs
+    seven-arcs-pictures: Seven Arcs Pictures
+    seven-seas: Seven Seas
+    seven-stone-entertainment: Seven Stone Entertainment
+    shaft: Shaft
+    shanghai-animation-film-studio: Shanghai Animation Film Studio
+    shanghai-foch-film-culture-investment: Shanghai Foch Film Culture Investment
+    shanghai-jump-network-technology: Shanghai Jump Network Technology
+    shelty: Shelty
+    shengying-animation: Shengying Animation
+    shenying-animation: Shenying Animation
+    shibuya-productions: Shibuya Productions
+    shin-ei-animation: Shin-Ei Animation
+    shinano-kikaku: Shinano Kikaku
+    shinchosha: Shinchosha
+    shingeki-no-kyojin-team: Shingeki no Kyojin Team
+    shinkuukan: Shinkuukan
+    shinryuu: Shinryuu
+    shinshokan: Shinshokan
+    shinwon-productions: Shinwon Productions
+    shinyusha: Shinyusha
+    shion: Shion
+    shirogumi: Shirogumi
+    shizuoka-daiichi-television: Shizuoka Daiichi Television
+    shochiku: Shochiku
+    shodensha: Shodensha
+    shogakukan: Shogakukan
+    shogakukan-music-digital-entertainment: Shogakukan Music & Digital Entertainment
+    shogakukan-productions: Shogakukan Productions
+    shogakukan-shueisha-productions: Shogakukan-Shueisha Productions
+    shounen-gahousha: Shounen Gahousha
+    shout-factory: Shout! Factory
+    showgate: Showgate
+    shueisha: Shueisha
+    shuka: Shuka
+    shusuisha-inc: Shusuisha Inc.
+    shuuhei-morita: Shuuhei Morita
+    signal-md: SIGNAL MD
+    silky-s: Silky’s
+    silver: Silver
+    silver-link: Silver Link.
+    skouras: Skouras
+    sky-perfect-well-think: SKY Perfect Well Think
+    sky-perfectv: SKY PerfecTV!
+    slowcurve: Slowcurve
+    sme-visual-works: SME Visual Works
+    smiral-animation: Smiral Animation
+    snack-works: Snack Works
+    snow-drop: Snow Drop
+    snow-light-staff: Snow Light Staff
+    soft-garage: Soft Garage
+    soft-on-demand: Soft on Demand
+    softbank-creative-corp: SoftBank Creative Corp.
+    softcel-pictures: SoftCel Pictures
+    softx: SoftX
+    sogo-vision: Sogo Vision
+    sol-blade: Sol Blade
+    sola-digital-arts: Sola Digital Arts
+    sola-entertainment: Sola Entertainment
+    solid-vox: Solid Vox
+    sonilude: Sonilude
+    sony-music-communications: Sony Music Communications
+    sony-music-entertainment: Sony Music Entertainment
+    sony-music-solutions: Sony Music Solutions
+    sony-pcl: Sony PCL
+    sony-pictures-entertainment: Sony Pictures Entertainment
+    sotsu: Sotsu
+    sotsu-agency: Sotsu Agency
+    sotsu-music-publishing: Sotsu Music Publishing
+    sound-team-don-juan: Sound Team Don Juan
+    sovat-theater: Sovat Theater
+    soyep: Soyep
+    soyuzmultfilm: Soyuzmultfilm
+    space-neko-company-ltd: Space Neko Company Ltd.
+    sparkly-key-animation-studio: Sparkly Key Animation Studio
+    sparky-animation: Sparky Animation
+    speed: SPEED
+    sprite-animation-studios: Sprite Animation Studios
+    square-enix: Square Enix
+    ssc: SSC
+    starchild-records: Starchild Records
+    staro: Staro
+    stella-road: Stella Road
+    steve-n-steven: Steve N' Steven
+    stingray: Stingray
+    straight-edge: Straight Edge
+    strawberry-meets-pictures: Strawberry Meets Pictures
+    studio-1st: Studio 1st
+    studio-2010: Studio 2010
+    studio-3hz: Studio 3Hz
+    studio-4-c: Studio 4°C
+    studio-5: Studio 5
+    studio-9-maiami: Studio 9 Maiami
+    studio-a-cat: Studio A-CAT
+    studio-anima: Studio Anima
+    studio-bind: Studio Bind
+    studio-blanc: Studio Blanc
+    studio-blue: Studio Blue
+    studio-bogey: Studio Bogey
+    studio-boomerang: Studio Boomerang
+    studio-cab: Studio Cab
+    studio-chant: Studio CHANT
+    studio-chizu: Studio Chizu
+    studio-cj: Studio Cj
+    studio-cl: Studio CL
+    studio-cocolo: Studio Cocolo
+    studio-colorido: Studio Colorido
+    studio-comet: Studio Comet
+    studio-compile: Studio Compile
+    studio-dadashow: Studio Dadashow
+    studio-daisy: Studio Daisy
+    studio-deen: Studio Deen
+    studio-deva-loka: Studio Deva Loka
+    studio-durian: Studio DURIAN
+    studio-easter: Studio Easter
+    studio-egg: Studio Egg
+    studio-elle: Studio elle
+    studio-eromatick: Studio Eromatick
+    studio-fantasia: Studio Fantasia
+    studio-flad: Studio Flad
+    studio-flag: Studio Flag
+    studio-flood: Studio Flood
+    studio-g-1neo: Studio G-1Neo
+    studio-gallop: Studio Gallop
+    studio-gao: Studio Gao
+    studio-garan: Studio GaRan
+    studio-gg2: Studio gg2
+    studio-ghibli: Studio Ghibli
+    studio-giants: Studio Giants
+    studio-gimlet: Studio Gimlet
+    studio-gokumi: Studio Gokumi
+    studio-gong: Studio Gong
+    studio-gooneys: Studio GOONEYS
+    studio-gouache: Studio Gouache
+    studio-gram: Studio Gram
+    studio-hibari: Studio Hibari
+    studio-hokiboshi: Studio Hokiboshi
+    studio-izena: Studio Izena
+    studio-jack: Studio Jack
+    studio-jam: Studio Jam
+    studio-junio: Studio Junio
+    studio-junior: Studio Junior
+    studio-kaab: Studio Kaab
+    studio-kai: Studio Kai
+    studio-kajino: Studio Kajino
+    studio-kanon: Studio Kanon
+    studio-kelmadick: Studio Kelmadick
+    studio-khara: Studio Khara
+    studio-kikan: Studio Kikan
+    studio-korumi: Studio Korumi
+    studio-kuma: Studio Kuma
+    studio-kyuuma: Studio Kyuuma
+    studio-liberty: Studio Liberty
+    studio-lings: Studio Lings
+    studio-lotus: Studio Lotus
+    studio-m2: Studio M2
+    studio-mark: Studio Mark
+    studio-massket: Studio Massket
+    studio-matrix: Studio Matrix
+    studio-mausu: Studio Mausu
+    studio-max: Studio Max
+    studio-mir: Studio Mir
+    studio-moriken: Studio Moriken
+    studio-mother: Studio MOTHER
+    studio-mwp: Studio MWP
+    studio-myu: Studio Myu
+    studio-nanahoshi: Studio Nanahoshi
+    studio-nem: Studio Nem
+    studio-neun: Studio Neun
+    studio-noa: Studio NOA
+    studio-noix: Studio NOIX
+    studio-nue: Studio Nue
+    studio-nut: Studio NuT
+    studio-outrigger: Studio Outrigger
+    studio-palette: Studio Palette
+    studio-pastoral: Studio Pastoral
+    studio-pierrot: Studio Pierrot
+    studio-pinewood: Studio Pinewood
+    studio-placebo: Studio Placebo
+    studio-ponoc: Studio Ponoc
+    studio-ppuri: Studio Ppuri
+    studio-puyukai: Studio PuYUKAI
+    studio-ribra: Studio Ribra
+    studio-rikka: Studio Rikka
+    studio-road: Studio Road
+    studio-rong: Studio Rong
+    studio-rufus: Studio Rufus
+    studio-saki-makura: Studio Saki Makura
+    studio-sign: Studio Sign
+    studio-signal: Studio Signal
+    studio-signpost: Studio Signpost
+    studio-t-t: Studio T&T
+    studio-take-off: Studio Take Off
+    studio-takuranke: Studio Takuranke
+    studio-targe: Studio Targe
+    studio-ten-carat: Studio Ten Carat
+    studio-toki: Studio Toki
+    studio-toy-box: Studio Toy Box
+    studio-tron: Studio Tron
+    studio-tulip: Studio Tulip
+    studio-twinkle: Studio Twinkle
+    studio-uni: Studio Uni
+    studio-unicorn: Studio Unicorn
+    studio-victory: Studio Victory
+    studio-voln: Studio VOLN
+    studio-w-baba: Studio W.Baba
+    studio-wanpack: Studio Wanpack
+    studio-wombat: Studio Wombat
+    studio-wyeth: Studio Wyeth
+    studio-zaendou: Studio Zaendou
+    studio-zain: Studio Zain
+    studio-zealot: Studio Zealot
+    studio-zero: Studio Zero
+    studio: Studio μ
+    studio-cucuri: Studio! Cucuri
+    studio-lan: STUDIO.LAN!
+    studioanimal-co: StudioAnimal Co.
+    studiorf-inc: StudioRF Inc.
+    sublimation: Sublimation
+    success-corp: Success Corp.
+    suiseisha: Suiseisha
+    sung-san-production: Sung San Production
+    sunny-side-up: Sunny Side Up
+    sunrise: Sunrise
+    sunrise-beyond: Sunrise Beyond
+    sunshine-corporation: Sunshine Corporation
+    sunwoo-entertainment: Sunwoo Entertainment
+    suzuki-mirano: Suzuki Mirano
+    synergy-japan: Synergy Japan
+    synergysp: SynergySP
+    synod: Synod
+    t-rex: T-Rex
+    t-o-entertainment: T.O Entertainment
+    t2-studio: T2 Studio
+    tablier-communication: Tablier Communication
+    taikan-anime: Taikan Anime
+    taikong-works: Taikong Works
+    takahashi-studio: Takahashi Studio
+    takara: Takara
+    takara-tomy: Takara Tomy
+    takara-tomy-a-r-t-s: Takara Tomy A.R.T.S
+    takeshobo: Takeshobo
+    taki-corporation: TAKI Corporation
+    tama-production: Tama Production
+    tamura-shigeru-studio: Tamura Shigeru Studio
+    tanosim: TANOsim
+    taomee: Taomee
+    tap: TAP
+    taro-house: Taro House
+    tasogare-otome-amnesia-production-partners: Tasogare Otome×Amnesia Production Partners
+    tatsunoko-production: Tatsunoko Production
+    tavac: Tavac
+    tbs: TBS
+    tc-entertainment: TC Entertainment
+    tcj: TCJ
+    team-kawadon: Team Kawadon
+    team-till-dawn: Team Till Dawn
+    team-yokkyufuman: Team YokkyuFuman
+    teamkg: teamKG
+    techno-sound: Techno Sound
+    teddy: Teddy
+    tele-cartoon-japan: Tele-Cartoon Japan
+    telecom-animation-film: Telecom Animation Film
+    telescreen-bv: Telescreen BV
+    tencent-animation-comics: Tencent Animation & Comics
+    tencent-japan: Tencent Japan
+    tencent-penguin-pictures: Tencent Penguin Pictures
+    tengu-koubou: Tengu Koubou
+    tesagure-production-committee: Tesagure! Production Committee
+    tezuka-productions: Tezuka Productions
+    the-answer-studio: The Answer Studio
+    the-berich: The Berich
+    the-pokemon-company-international: The Pokemon Company International
+    the-right-stuf-international: The Right Stuf International
+    the-village-of-marchen: The Village of Marchen
+    think-corporation: Think Corporation
+    three-fat-samurai: Three Fat Samurai
+    thundray: Thundray
+    tin-house: Tin House
+    tms-entertainment: TMS Entertainment
+    tms-kyokuchi: TMS-Kyokuchi
+    tnk: TNK
+    to-books: TO Books
+    toei-agency: Toei Agency
+    toei-animation: Toei Animation
+    toei-video: Toei Video
+    toho: Toho
+    toho-animation: TOHO animation
+    tohokushinsha-film-corporation: Tohokushinsha Film Corporation
+    tokai-television: Tokai Television
+    tokuma-japan: Tokuma Japan
+    tokuma-shoten: Tokuma Shoten
+    tokyo-animation-film: Tokyo Animation Film
+    tokyo-broadcasting-system: Tokyo Broadcasting System
+    tokyo-genzousho: Tokyo Genzousho
+    tokyo-kids: Tokyo Kids
+    tokyo-media-connections: Tokyo Media Connections
+    tokyo-movie-shinsha: Tokyo Movie Shinsha
+    tokyo-mx: Tokyo MX
+    tokyopop: TOKYOPOP
+    tokyu-recreation: Tokyu Recreation
+    tomason: Tomason
+    tomovies: Tomovies
+    tomoyasu-murata-company: Tomoyasu Murata Company
+    tong-ming-xuan: Tong Ming Xuan
+    topcraft: Topcraft
+    topgear: TopGear
+    toranoana: Toranoana
+    tose: Tose
+    toshiba-emi: Toshiba EMI
+    toshiba-entertainment: Toshiba Entertainment
+    totonyan: Totonyan
+    touhouku-shinsha: Touhouku Shinsha
+    toy-s-factory: Toy's Factory
+    toyo-recording: Toyo Recording
+    trans-arts: Trans Arts
+    tri-slash: Tri-Slash
+    triangle-staff: Triangle Staff
+    trick-block: Trick Block
+    trif-studio: TriF Studio
+    trigger: Trigger
+    trilogy-future-studio: Trilogy Future Studio
+    trinet-entertainment: Trinet Entertainment
+    trinity-sound: Trinity Sound
+    triple-a: Triple A
+    triple-x: Triple X
+    tripod: Tripod
+    troyca: TROYCA
+    trycell: Trycell
+    tsubasa-entertainment: Tsubasa Entertainment
+    tsubu-doll-production-committee: Tsubu Doll Production Committee
+    tsuburaya-productions: Tsuburaya Productions
+    tsuchida-productions: Tsuchida Productions
+    tsumugi-akita-anime-lab: Tsumugi Akita Anime Lab
+    tsuritama-partners: tsuritama partners
+    tuba: TUBA
+    tv-aichi: TV Aichi
+    tv-asahi: TV Asahi
+    tv-osaka: TV Osaka
+    tv-tokyo: TV Tokyo
+    tv-tokyo-music: TV Tokyo Music
+    tvq-kyushu-broadcasting: TVQ Kyushu Broadcasting
+    twilight-studio: Twilight Studio
+    twin-engine: Twin Engine
+    twin-engine-digital-animation-studio: Twin Engine Digital Animation Studio
+    tyo: TYO
+    tyo-animations: TYO Animations
+    typhoon-graphics: Typhoon Graphics
+    u-next: U-NEXT
+    u-m-a-a-inc: U/M/A/A Inc.
+    uchouten-kazoku-production-committee: Uchouten Kazoku Production Committee
+    ufotable: ufotable
+    ultra-super-pictures: Ultra Super Pictures
+    um-productions: UM Productions
+    unend: UNEND
+    union-cho: Union Cho
+    universal-radio-studio: Universal Radio Studio
+    universal-studios: Universal Studios
+    unlimited-partners: UNLIMITED Partners
+    urban-vision: Urban Vision
+    usagi-ou: Usagi.Ou
+    usen: USEN
+    valkyria: Valkyria
+    vap: VAP
+    vasoon-animation: Vasoon Animation
+    vega-entertainment: Vega Entertainment
+    venet: Venet
+    venus-vangard: Venus Vangard
+    victor-entertainment: Victor Entertainment
+    view-works: View Works
+    viki: Viki
+    viracocha: Viracocha
+    virgin-babylon-records: Virgin Babylon Records
+    vista: VISTA
+    visual-80: Visual 80
+    visual-art-s: Visual Art’s
+    visual-flight: Visual Flight
+    visual-vision: Visual Vision
+    viz-media: Viz Media
+    volks: Volks
+    vsi-group: VSI Group
+    w-toon-studio: W-Toon Studio
+    wako-productions: Wako Productions
+    walt-disney-japan: Walt Disney Japan
+    walt-disney-studios: Walt Disney Studios
+    wan-wei-mao-donghua: Wan Wei Mao Donghua
+    wani-magazine: Wani Magazine
+    wao-world: Wao World
+    wargaming-japan: Wargaming Japan
+    warner-bros: Warner Bros.
+    warner-bros-japan: Warner Bros. Japan
+    warner-music-japan: Warner Music Japan
+    watamote-production-committee: Watamote Production Committee
+    wawayu-animation: Wawayu Animation
+    wei-chuang-jiang-xin: Wei Chuang Jiang Xin
+    wfield: WField
+    white-bear: White Bear
+    white-fox: White Fox
+    white-fox-izukogen-studio: WHITE FOX Izukōgen Studio
+    white-line: White Line
+    winsing: WinSing
+    wired: Wired
+    wish: Wish
+    wit-studio: Wit Studio
+    wolfsbane: Wolfsbane
+    wonder-cat-animation: Wonder Cat Animation
+    wonder-kids: Wonder Kids
+    wonwoo-production: WonWoo Production
+    world-cosplay-summit: World Cosplay Summit
+    wowow: WOWOW
+    wulifang-digital: Wulifang Digital
+    wuxi-tiansheng-donghua-zhizuo: Wuxi TianSheng Donghua Zhizuo
+    xanthus-media: Xanthus Media
+    xebec: Xebec
+    xebec-zwei: Xebec Zwei
+    xenron: xenron
+    xflag: XFLAG
+    xing: Xing
+    y-o-u-c: Y.O.U.C
+    yabes: YABES
+    yahoo-japan: Yahoo! Japan
+    yamamura-animation-inc: Yamamura Animation, Inc.
+    yamato-works: Yamato Works
+    yaoyorozu: Yaoyorozu
+    yellow-film: Yellow Film
+    yhkt-entertainment: YHKT Entertainment
+    yokohama-animation-lab: Yokohama Animation Lab
+    yomiko-advertising: Yomiko Advertising
+    yomiuri-advertising: Yomiuri Advertising
+    yomiuri-telecasting: Yomiuri Telecasting
+    yomiuri-telecasting-corporation: Yomiuri Telecasting Corporation
+    yomiuri-tv-enterprise: Yomiuri TV Enterprise
+    yostar-pictures: Yostar Pictures
+    youku-tudou: Youku Tudou
+    youmex: Youmex
+    ytv: YTV
+    yuewen-animation-comics: Yuewen Animation & Comics
+    yuhodo: Yuhodo
+    yumeta-company: Yumeta Company
+    zack-promotion: Zack Promotion
+    zero-a: ZERO-A
+    zero-g: Zero-G
+    zero-g-room: Zero-G Room
+    zexcs: Zexcs
+    ziz-entertainment-ziz: ZIZ Entertainment (ZIZ)
+    zyc: Zyc
+  genre:
+    action: Akcja
+    cyberpunk: Cyberpunk
+    drama: Dramat
+    ecchi: Ecchi
+    eksperymentalne: Eksperymentalne
+    fantasy: Fantasy
+    harem: Harem
+    hentai: Hentai
+    historical: Historyczne
+    horror: Horror
+    comedy: Komedia
+    police: Kryminalne
+    magic: Magia
+    mecha: Mecha
+    reverse-harem: Męski harem
+    music: Muzyczne
+    supernatural: Nadprzyrodzone
+    dementia: Obłęd
+    slice-of-life: Okruchy życia
+    parody: Parodia
+    adventure: Przygodowe
+    psychological: Psychologiczne
+    romans: Romans
+    romance-old: Romans (do rozdzielenia)
+    science-fiction: Sci-Fi
+    shoujo-ai: Shoujo-ai
+    shounen-ai: Shounen-ai
+    space-opera: Space opera
+    sports: Sportowe
+    steampunk: Steampunk
+    school: Szkolne
+    martial-arts: Sztuki walki
+    mystery: Tajemnica
+    thriller: Thriller
+    military: Wojskowe
+    yaoi: Yaoi
+    yuri: Yuri
+  target-group:
+    kids: Dla dzieci
+    josei: Josei
+    seinen: Seinen
+    shoujo: Shoujo
+    shounen: Shounen
+  character-type:
+    actors: Aktorzy
+    albinos: Albinos
+    androids: Androidy
+    angels: Anioły
+    artists: Artyści
+    nobility: Arystokracja
+    bifauxnen: Bifauxnen
+    bishojo: Bishoujo
+    bishonen: Bishounen
+    blizniaki: Bliźniaki
+    gods: Bóstwa
+    cgdct: CGDCT
+    chibi: Chibi
+    chuunibyou: Chuunibyou
+    cyborg: Cyborgi
+    sorcerers: Czarodzieje
+    dandere-kuudere: Dandere/Kuudere
+    delinquents: Delikwenci
+    demons: Demony
+    dere-dere: Dere-Dere
+    detective: Detektywi
+    doctor: Doktor
+    dorosli: Dorośli
+    ghosts: Duchy
+    kid: Dzieci
+    exorcists: Egzorcyści
+    elves: Elfy
+    furry: Furry
+    futanari: Futanari
+    gar: GAR
+    genius: Geniusz
+    genki: Genki
+    gamers: Gracze
+    gyaru: Gyaru
+    heterochromia: Heterochromia
+    hikikomori: Hikikomori
+    hybrid: Hybryda
+    idol: Idole
+    mlodsze-siostry: Imouto
+    insects: Insekty
+    priests: Kapłani
+    waiter-waitress: Kelner / Kelnerka
+    kemonomimi: Kemonomimi
+    kitsune: Kitsune
+    alien: Kosmici
+    cats: Koty
+    kowal: Kowal
+    dwarves: Krasnoludy
+    butler: Lokaje
+    loli: Loli
+    magical: Magiczne
+    mahou-shoujo: Mahou shoujo
+    mayadere: Mayadere
+    meganekko: Meganekko
+    moe: Moe
+    murderer: Mordercy
+    talking-animals: Mówiące zwierzęta
+    young-buys: Młodzi chłopcy
+    teenagers: Młodzież
+    mercenaries: Najemnicy
+    teachers: Nauczyciele
+    neet: NEET
+    nekomata: Nekomata
+    niepelnosprawni: Niepełnosprawni
+    slaves: Niewolnicy
+    ninja: Ninja
+    bodyguards: Ochroniarz
+    megane: Okularnik
+    overpowered: OP postać
+    otaku: Otaku
+    otouto: Otouto
+    animated-object: Ożywiony przedmiot
+    pirates: Piraci
+    maids: Pokojówki
+    policjanci: Policjanci
+    monsters: Potwory
+    office-workers: Pracownicy biurowi
+    criminals: Przestępcy
+    robots: Roboty
+    split-personality: Rozdwojenie jaźni
+    knights: Rycerze
+    craftsmen: Rzemieślnik
+    samurai: Samuraje
+    shinigami: Shinigami
+    orphans: Sieroty
+    slime: Slime
+    dragons: Smoki
+    strazacy: Strażacy
+    studenci: Studenci
+    sukkuby: Sukkuby
+    superheroes: Superbohaterzy
+    mermaids: Syreny
+    skeleton: Szkielet
+    spy: Szpiedzy
+    tengu: Tengu
+    transvestite: Transwestyta
+    tsundere: Tsundere
+    uczniowie: Uczniowie
+    villainess: Villainess
+    vampire: Wampiry
+    witch: Wiedźmy
+    werewolfs: Wilkołaki
+    fairy: Wróżki
+    daimaou: Władca Demonów
+    yandere-yangire: Yandere/Yangire
+    youkai: Youkai
+    gender-bender: Zamiana płci
+    zombies: Zombie
+    soldiers: Żołnierze
+    animals: Zwierzęta
+    bounty-hunters: Łowcy nagród
+  place-and-time:
+    alternative-earth: Alternatywna Ziemia
+    north-america: Ameryka Północna
+    office: Biuro
+    apartment-life: Budynek mieszkalny
+    chiny: Chiny
+    dungeon: Dungeon
+    dystopia: Dystopia
+    europa: Europa
+    feudal-japan: Feudalna Japonia
+    jak-feudalna-wschodnia-azja: Jak feudalna wschodnia azja
+    like-game: Jak gra
+    medieval: Jak średniowiecze
+    japonia: Japonia
+    cafe: kawiarnia/restauracja/bar/sklep
+    south-korea: Korea Południowa
+    space: Kosmos
+    miasto: Miasto
+    ocean: Ocean
+    omegaverse: Omegaverse
+    podroz: Podróż
+    post-apocalyptic: Postapokaliptyczne
+    future: Przyszłość
+    desert: Pustynia
+    alternative-world: Świat alternatywny
+    all-boys-school: Szkoła dla chłopców
+    all-girls-school: Szkoła dla dziewcząt
+    virtual-reality: W grze / VR
+    great-britain: Wielka Brytania
+    wies: Wieś
+    wspolczesnosc: Współczesność
+    island: Wyspy
+  other:
+    alchemy: Alchemia
+    amnezja: Amnezja
+    baseball: Bejsbol
+    boxing: Boks
+    cold-weapon: Broń biała
+    bron-palna: Broń Palna
+    buddhist: Buddyzm
+    illness: Choroba
+    crossdressing: Crossdressing
+    death-game: Death Game
+    body-sharing: Dzielenie ciała
+    educational: Edukacyjne
+    ekonomia: Ekonomia
+    human-experimentation: Eksperymenty na ludziach
+    contemporary-fantasy: Fantastyka współczesna
+    photography: Fotografia
+    guilds: Gildie
+    ginmastyka: Gimnastyka
+    golf: Golf
+    gore: Gore
+    high-stakes: Gra o wysoką stawkę
+    card-games: Gry karciane
+    gambling: Hazard
+    isekai: Isekai
+    iyashikei: Iyashikei
+    cannibalism: Kanibalizm
+    incest: Kazirodztwo
+    kendo: Kendo
+    school-club: Klub szkolny
+    kolarstwo: Kolarstwo
+    kontrakt-malzenski: Kontrakt małżeński
+    basketball: Koszykówka
+    kulinaria: Kulinaria
+    cultivation: Kultywacja
+    lotnictwo: Lotnictwo
+    mafia: Mafia
+    mahjong: Mahjong
+    manipulacja-czasem-i-przestrzenia: Manipulacja czasem i przestrzenią
+    christian-mythology: Mitologia chrześcijańska
+    japanese-mythology: Mitologia japońska
+    about-game: O grach
+    childcare: Opieka nad dzieckiem
+    master-servant-relationship: Pan i Sługa
+    panty-shots: Panty shots
+    football: Piłka nożna
+    trains: Pociągi
+    podroze-w-czasie: Podróże w czasie
+    polityka: Polityka
+    przemoc: Przemoc
+    reincarnation: Reinkarnacja
+    agriculture: Rolnictwo
+    cars: Samochody
+    students-council: Samorząd uczniowski
+    seks: Seks
+    shogi: Shogi
+    volleyball: Siatkówka
+    conspiracy: Spisek
+    battle-suits: Strój bojowy
+    gunfights: Strzelaniny
+    super-power: Supermoce
+    taniec: Taniec
+    tattoos: Tatuaże
+    tennis: Tenis
+    trojkat-romantyczny: Trójkąt miłosny
+    hand-to-hand-combat: Walka wręcz
+    watek-romantyczny: Wątek romantyczny
+    war: Wojna
+    sexual-abuse: Wykorzystywanie seksualne
+    explicit-sex: Wyraźny seks
+    car-racing: Wyścigi Samochodowe
+    yakuza: Yakuza
+    arranged-marriage: Zaaranżowany związek
+    body-swapping: Zamiana ciałami
+    zemsta: Zemsta
+    animal-abuse: Znęcanie nad zwierzętami
+    bullying: Znęcanie się
+    afterlife: Życie pośmiertne
+    archery: Łucznictwo
+    skating: Łyżwiarstwo
+  production-type:
+    grafika-2-5d: Animacja 2,5D
+    animacja-3d: Animacja 3D
+    chinese-animation: Animacja chińska
+    koreanska-animacja: Animacja Koreańska
+    antologia: Antologia
+    brak-dialogow: Brak dialogów
+    chinsko-japonska-koprodukcja: Chińsko-japońska koprodukcja
+    czarno-biale: Czarno-Białe
+    doujinshi: Doujinshi
+    realne-scenerie: Elementy Live-Action
+    epizodyczne: Epizodyczne
+    independent-film: Film niezależny
+    picture-drama: Picture Drama
+    pionowe-anime: Pionowe Anime
+    reklama: Reklama
+    full-color: W kolorze
+    webnovel: Webnovel
+    webtoon: Webtoon
+    wydane-w-papierze: Wydane w papierze
+    wydane-w-polsce: Wydane w Polsce
+    yonkoma: Yonkoma
+    young-animator-training-project: Young Animator Training Project
+  publisher:
+    bloom: .Bloom
+    hack-g-u-the-world: .hack//G.U. The World
+    2d-dream-magazine: 2D Dream Magazine
+    4-koma-nano-ace: 4-koma Nano Ace
+    801-media: 801 Media
+    ac-qq: AC.QQ
+    ace-assault: Ace Assault
+    ace-momogumi: Ace Momogumi
+    ace-next: Ace Next
+    ace-tokunou: Ace Tokunou
+    action-comics-boys-love: Action Comics Boys Love
+    action-pizazz: Action Pizazz
+    action-pizazz-dx: Action Pizazz DX
+    action-pizazz-hb: Action Pizazz HB
+    action-pizazz-special: Action Pizazz Special
+    action-young: Action Young
+    adv-manga: ADV Manga
+    afternoon: Afternoon
+    age-premium: Age Premium
+    aka-lala: Aka Lala
+    akamaru-jump: Akamaru Jump
+    akuma: Akuma
+    alice: Alice
+    alpha-polis: Alpha Polis
+    alphapolis-web-manga: Alphapolis Web Manga
+    altima-ace: Altima Ace
+    amie-magazine: Amie Magazine
+    ane-kei-petit-comic: Ane Kei Petit-comic
+    ane-lala: Ane LaLa
+    angel-club: Angel Club
+    anise-magazine: Anise Magazine
+    anisen: AniSen
+    ao-lala: Ao Lala
+    aoharu: Aoharu
+    apple-collection: Apple Collection
+    aqua-comics: Aqua Comics
+    aqua-deep: Aqua Deep
+    aqua-pipi: Aqua PiPi
+    aria: ARIA
+    asahi-shinbun: Asahi Shinbun
+    asahi-shougakusei-shimbun: Asahi Shougakusei Shimbun
+    asuka-monthly: Asuka (Monthly)
+    asuka-ciel: Asuka Ciel
+    asuka-fantasy-dx: Asuka Fantasy DX
+    asuka-mystery-dx: Asuka Mystery DX
+    ax: AX
+    ayla: AYLA
+    b-s-anima: B'S Anima
+    b-s-lovey-katsubou: B's-LOVEY Katsubou
+    b-s-lovey-recottia: B's-LOVEY recottia
+    b-boy-honey: B-Boy Honey
+    b-boy-luv: B-Boy Luv
+    b-boy-phoenix: B-Boy Phoenix
+    b-boy-zips: B-Boy Zips
+    baby: Baby
+    bamboo-comics: Bamboo Comics
+    be-x-boy-gold: Be x Boy GOLD
+    be-x-boy-novels: Be x Boy Novels
+    be-love: Be-Love
+    beans-ace: Beans Ace
+    bessatsu-coro-coro-comic: Bessatsu Coro Coro Comic
+    bessatsu-dragon-age: Bessatsu Dragon Age
+    bessatsu-friend: Bessatsu Friend
+    bessatsu-friend-zoukan-betsufure: Bessatsu Friend Zoukan BetsuFure
+    bessatsu-hana-to-yume: Bessatsu Hana to Yume
+    bessatsu-manga-goraku: Bessatsu Manga Goraku
+    bessatsu-margaret: Bessatsu Margaret
+    bessatsu-shounen-champion: Bessatsu Shounen Champion
+    bessatsu-shounen-magazine: Bessatsu Shounen Magazine
+    bessatsu-young-champion: Bessatsu Young Champion
+    bessatsu-young-magazine: Bessatsu Young Magazine
+    betsucomi: Betsucomi
+    betsufure: BetsuFure
+    betsuma-sister: Betsuma Sister
+    bgm: BGM
+    bianca: bianca
+    biblos: Biblos
+    big-comic: Big Comic
+    big-comic-for-ladies: Big Comic for Ladies
+    big-comic-original: Big Comic Original
+    big-comic-original-zoukan: Big Comic Original Zoukan
+    big-comic-spirits: Big Comic Spirits
+    big-comic-superior: Big Comic Superior
+    big-comic-zoukan: Big Comic Zoukan
+    big-gangan: Big Gangan
+    big-gold: Big Gold
+    bishoujo-kakumei-kiwame: Bishoujo Kakumei KIWAME
+    bishoujo-kakumei-kiwame-road: Bishoujo Kakumei KIWAME Road
+    bishoujo-teki-kaikatsu-ryoku: Bishoujo Teki Kaikatsu Ryoku
+    blade-online: Blade Online
+    blink: BLink
+    bokura: Bokura
+    bomtoon: Bomtoon
+    bonita: Bonita
+    booking: Booking
+    bouquet: Bouquet
+    box-air: BOX-AiR
+    boy-s-love: Boy's LOVE
+    boy-s-pierce: BOY'S Pierce
+    boys-capi: Boys Capi!
+    boys-fan: Boys Fan
+    boys-jam: Boys Jam!
+    boys-l: Boys L
+    bs11: BS11
+    bunkasha: Bunkasha
+    bushiroad-monthly: Bushiroad (Monthly)
+    bushiroad-tcg-magazine: Bushiroad TCG Magazine
+    business-jump: Business Jump
+    buster-comic: Buster Comic
+    cab: Cab
+    cabaret-club-comic: Cabaret-Club Comic
+    candy-time: Candy Time
+    canna: Canna
+    canopri-comic: Canopri Comic
+    catalogue-series: Catalogue Series
+    champion-cross: Champion Cross
+    champion-red: Champion RED
+    champion-red-ichigo: Champion RED Ichigo
+    champion-tap: Champion Tap!
+    chance: Chance
+    chara: Chara
+    chara-mel: Chara Mel
+    chara-mel-febri: Chara Mel Febri
+    chara-selection: Chara Selection
+    charade: Charade
+    charles-mag: Charles Mag
+    cheese: Cheese!
+    cheese-zoukan: Cheese! Zoukan
+    cheri: Cheri+
+    chobecomi: ChobeComi!
+    chorus: Chorus
+    chuchu: ChuChu
+    ciao: Ciao
+    ciao-dx: Ciao DX
+    ciao-dx-horror: Ciao DX Horror
+    ciel: CIEL
+    ciel-trestres: CIEL TresTres
+    cita-cita: Cita Cita
+    cita-nium: Cita-NIUM
+    citron: Citron
+    club-sunday: Club Sunday
+    cobalt: Cobalt
+    cocohana: Cocohana
+    colorful-drops: Colorful Drops
+    comi-digi: Comi Digi
+    comic-0ex: Comic 0EX
+    comic-alive: Comic Alive
+    comic-anthurium: Comic Anthurium
+    comic-aqua: Comic Aqua
+    comic-aun: Comic Aun
+    comic-avarus: Comic Avarus
+    comic-b-s-log: Comic B's-LOG
+    comic-b-s-log-air-raid: Comic B's-LOG Air Raid
+    comic-b-s-log-kyun: Comic B's-LOG Kyun!
+    comic-bazooka: Comic Bazooka
+    comic-be: Comic Be
+    comic-beam: Comic Beam
+    comic-birz: Comic Birz
+    comic-blade: Comic Blade
+    comic-blade-masamune: Comic Blade Masamune
+    comic-blade-zebel: Comic Blade Zebel
+    comic-bonbon: Comic Bonbon
+    comic-break: Comic Break
+    comic-bugbug: Comic BugBug
+    comic-bunbun: Comic BunBun
+    comic-bunch: Comic Bunch
+    comic-burger: Comic Burger
+    comic-candoll: Comic Candoll
+    comic-champ: Comic Champ
+    comic-chara: Comic Chara
+    comic-charge: Comic Charge
+    comic-chois: Comic choiS!
+    comic-comomo: Comic Comomo
+    comic-comp: Comic Comp
+    comic-cue: Comic Cue
+    comic-cune: Comic Cune
+    comic-cyutt: Comic Cyutt
+    comic-daito: Comic Daito
+    comic-dangan: Comic Dangan
+    comic-days: Comic Days
+    comic-dengeki-daioh-g: Comic Dengeki Daioh "g"
+    comic-dengeki-teioh: Comic Dengeki Teioh
+    comic-dolphin: Comic Dolphin
+    comic-dolphin-jr: Comic Dolphin Jr.
+    comic-dragon: Comic Dragon
+    comic-earth-star: Comic Earth☆Star
+    comic-ero-tama: Comic Ero-tama
+    comic-europa: Comic Europa
+    comic-fans: Comic Fans
+    comic-fantasy: Comic Fantasy
+    comic-fire: Comic Fire
+    comic-flamingo-r: Comic Flamingo R
+    comic-flapper: Comic Flapper
+    comic-fleur: Comic Fleur
+    comic-gaia: Comic Gaia
+    comic-gamma: Comic Gamma
+    comic-gang: Comic Gang
+    comic-garden: Comic Garden
+    comic-gardo: Comic Gardo
+    comic-geki-yaba: Comic GEKI-YABA
+    comic-gekiman: Comic Gekiman
+    comic-gene: Comic Gene
+    comic-grape: Comic Grape
+    comic-gum: Comic Gum
+    comic-hanaman: Comic Hanaman
+    comic-heaven: Comic Heaven
+    comic-high: Comic High!
+    comic-hime-sakura: Comic Hime-Sakura
+    comic-himedorobow: Comic Himedorobow
+    comic-himekuri: Comic Himekuri
+    comic-holic: Comic Holic
+    comic-hotmilk: Comic Hotmilk
+    comic-ino: Comic ino.
+    comic-it: Comic it
+    comic-jumbo: Comic Jumbo
+    comic-june: Comic June
+    comic-kairaku-ten: Comic Kairaku-ten
+    comic-kairaku-ten-beast: Comic Kairaku-ten Beast
+    comic-kairaku-ten-xtc: Comic Kairaku-ten XTC
+    comic-karyou-gakuen: Comic Karyou Gakuen
+    comic-koh: Comic KOH
+    comic-kwai: Comic Kwai
+    comic-lemon-club: Comic Lemon Club
+    comic-lily: Comic Lily
+    comic-lo: Comic LO
+    comic-magazine-lynx: Comic Magazine LYNX
+    comic-magnum: Comic Magnum
+    comic-magnum-x: Comic Magnum X
+    comic-mahou-no-iland: Comic Mahou no iLand
+    comic-maihime-musou: Comic Maihime Musou
+    comic-man-ten: Comic Man-Ten
+    comic-manga-ou: Comic Manga Ou
+    comic-marble: Comic Marble
+    comic-marginal: Comic Marginal
+    comic-masyo: Comic Masyo
+    comic-mate: Comic Mate
+    comic-megacube: Comic MegaCube
+    comic-megamilk: Comic MegaMilk
+    comic-megaplus: Comic Megaplus
+    comic-megastore: Comic Megastore
+    comic-megastore-alpha: Comic Megastore Alpha
+    comic-megastore-h: Comic Megastore H
+    comic-meteor: Comic Meteor
+    comic-milf: Comic MILF
+    comic-milk-purin: Comic Milk Purin
+    comic-minimon: Comic Minimon
+    comic-moe-max: Comic Moe Max
+    comic-momohime: Comic Momohime
+    comic-moog: Comic Moog
+    comic-muga: Comic Muga
+    comic-mugen-tensei: Comic Mugen Tensei
+    comic-mujin: Comic Mujin
+    comic-newtype: Comic Newtype
+    comic-nora: Comic NORA
+    comic-orecano: Comic Orecano!
+    comic-p-flirt: Comic P Flirt
+    comic-papipo: Comic Papipo
+    comic-penguin-celeb: Comic Penguin Celeb
+    comic-penguin-club: Comic Penguin Club
+    comic-penguin-club-sanzokuban: Comic Penguin Club Sanzokuban
+    comic-plum: Comic Plum
+    comic-polaris: Comic Polaris
+    comic-pool: Comic POOL
+    comic-pot: Comic Pot
+    comic-potpourri-club: Comic Potpourri Club
+    comic-prism: Comic Prism
+    comic-purumelo: Comic Purumelo
+    comic-pururun-max: Comic Pururun Max
+    comic-ran-twins: Comic Ran Twins
+    comic-rats: Comic Rats
+    comic-revolution: Comic Revolution
+    comic-rex: Comic Rex
+    comic-ride: Comic Ride
+    comic-rin: Comic RIN
+    comic-ruelle: Comic Ruelle
+    comic-rush: Comic Rush
+    comic-ryu: Comic Ryu
+    comic-ryu-web: Comic Ryu Web
+    comic-sai: Comic Sai
+    comic-sangokushi: Comic Sangokushi
+    comic-seed: Comic Seed!
+    comic-shingeki: Comic Shingeki
+    comic-shitsuraku-ten: Comic Shitsuraku-ten
+    comic-shoujo-shiki: Comic Shoujo Shiki
+    comic-shoujo-tengoku: Comic Shoujo Tengoku
+    comic-sigma: Comic Sigma
+    comic-situation-play: Comic Situation Play
+    comic-spica: Comic Spica
+    comic-sumomo: Comic Sumomo
+    comic-tenma: Comic Tenma
+    comic-tokumori: Comic Tokumori
+    comic-tom-monthly: Comic Tom (Monthly)
+    comic-tom-plus: Comic Tom Plus
+    comic-unreal: Comic Unreal
+    comic-valkyrie: Comic Valkyrie
+    comic-x-eros: Comic X-Eros
+    comic-xo: Comic XO
+    comic-ya: Comic YA!
+    comic-yell: Comic Yell!
+    comic-yuri-hime: Comic Yuri Hime
+    comic-yuri-hime-s: Comic Yuri Hime S
+    comic-zenon: Comic Zenon
+    comic-zero-sum: Comic ZERO-SUM
+    comic-zip: Comic Zip
+    comic-bunch_2: Comic@Bunch
+    comic-loid: Comic@loid
+    comico-korea: Comico Korea
+    comicwalker: ComicWalker
+    comique-hug: Comique Hug
+    comp-ace: Comp Ace
+    comptiq: Comptiq
+    cookie: Cookie
+    cookie-box: Cookie BOX
+    coro-coro-comic: Coro Coro Comic
+    corocoro-comic: CoroCoro Comic
+    craft: Craft
+    crimson-comics: Crimson Comics
+    crunchyroll-sc-anime-fund: Crunchyroll SC Anime Fund
+    cutie-comic: Cutie Comic
+    cyberia-maniaex: Cyberia ManiaEX
+    cycomics: Cycomics
+    daito-comics-boys-love: Daito Comics Boys Love
+    daitosha: Daitosha
+    daiwon: Daiwon
+    dango: Dango
+    daria: Daria
+    daum-webtoon: Daum Webtoon
+    dear: Dear+
+    deluxe-betsucomi: Deluxe Betsucomi
+    deluxe-margaret: Deluxe Margaret
+    dengeki-bunko-magazine: Dengeki Bunko Magazine
+    dengeki-comic-gao: Dengeki Comic Gao!
+    dengeki-comic-japan: Dengeki Comic Japan
+    dengeki-d-manga-online: Dengeki D-manga Online
+    dengeki-daioh: Dengeki Daioh
+    dengeki-daioh-genesis: Dengeki Daioh Genesis
+    dengeki-g-s-comic: Dengeki G's Comic
+    dengeki-g-s-festival-comic: Dengeki G's Festival! Comic
+    dengeki-g-s-magazine: Dengeki G's Magazine
+    dengeki-girl-s-style: Dengeki Girl's Style
+    dengeki-hobby: Dengeki Hobby
+    dengeki-kuro-maoh: Dengeki Kuro Maoh
+    dengeki-maoh: Dengeki Maoh
+    dengeki-moeoh: Dengeki Moeoh
+    dengeki-nintendo-ds: Dengeki Nintendo DS
+    dengeki-playstation: Dengeki PlayStation
+    dengeki-teioh: Dengeki Teioh
+    denshi-birz: Denshi Birz
+    dessert: Dessert
+    doki: Doki~!
+    doki-special: Doki~! Special
+    dragon-age: Dragon Age
+    dragon-age-pure: Dragon Age Pure
+    dragon-junior: Dragon Junior
+    dragon-magazine: Dragon Magazine
+    dragon-youth: Dragon Youth
+    drap: drap
+    drap-milk: drap Milk
+    dvd-majiyaba: DVD Majiyaba
+    e-young-magazine: e Young Magazine
+    east-press: East Press
+    edith: Edith
+    egmont-polska: Egmont Polska
+    egoist: Egoist
+    elegance-eve: Elegance Eve
+    emerald: Emerald
+    ergo: Ergo
+    evening: Evening
+    eyes: Eyes
+    e-2: E★2
+    fakku: Fakku
+    famitsu: Famitsu
+    famitsu-bros: Famitsu Bros
+    famitsu-comic-clear: Famitsu Comic Clear
+    famitsu-playstation: Famitsu Playstation +
+    fbonline: FBonline
+    feel-young: Feel Young
+    fellows: Fellows!
+    fig: Fig
+    flexcomix-blood: FlexComix Blood
+    flexcomix-flare: FlexComix Flare
+    flexcomix-next: FlexComix Next
+    flower-comics-special: Flower Comics Special
+    flowers-monthly: Flowers (Monthly)
+    for-mrs: For Mrs.
+    fresh-jump: Fresh Jump
+    friend: Friend
+    from-gamers: From Gamers
+    futabasha-web-magazine: Futabasha Web Magazine
+    g-sister: G'sister
+    g-men: G-men
+    ga-bunko-magazine: GA Bunko Magazine
+    galeria-ksiazki: Galeria książki
+    gamest-magazine: Gamest Magazine
+    gangan-joker: Gangan Joker
+    gangan-online: GanGan Online
+    gangan-powered: GanGan Powered
+    gangan-wing: Gangan Wing
+    ganma: Ganma!
+    garo: Garo
+    gateau: Gateau
+    gekkan-spirits: Gekkan! Spirits
+    gelatin: Gelatin
+    gene-pixiv: Gene pixiv
+    generous-kiss: Generous Kiss
+    gensou-fantasy: Gensou Fantasy
+    genzo: Genzo
+    gessan: Gessan
+    gfantasy: GFantasy
+    girls-form: Girls forM
+    go-go-bunch: Go Go Bunch
+    good-afternoon: good! Afternoon
+    gothic-lolita-bible: Gothic & Lolita Bible
+    graman-geki: Graman Geki!
+    grand-jump: Grand Jump
+    grand-jump-premium: Grand Jump Premium
+    gundam-ace: Gundam Ace
+    gush: Gush
+    gush-peche: GUSH pêche
+    gush-pochi: GUSH Pochi.
+    gust: Gust
+    haksan: Haksan
+    hana-lala-online: Hana Lala Online
+    hana-to-yume: Hana to Yume
+    hana-to-yume-online: Hana to Yume Online
+    hana-to-yume-plus: Hana to Yume Plus
+    hana-to-yume-bunkei-shoujo: 'Hana to Yume: Bunkei Shoujo'
+    hanamaru: Hanamaru
+    hanamaru-manga: Hanamaru Manga
+    hanami: Hanami
+    hanaoto: Hanaoto
+    hanaoto-dx: Hanaoto DX
+    handy-comic: Handy Comic
+    happy-elements: Happy Elements
+    harlequin: Harlequin
+    harmony-romance-zoukangou: Harmony Romance Zoukangou
+    harta: Harta
+    haruca: haruca
+    hatsu-kiss: Hatsu Kiss
+    heros: Heros
+    hertz: HertZ
+    hibana: HiBaNa
+    hinakan-hi: Hinakan Hi!
+    hirari: Hirari,
+    hitomi: Hitomi
+    hontou-ni-atta-kowai-hanashi: Hontou ni Atta Kowai Hanashi
+    hontou-ni-kowai-douwa: Hontou ni Kowai Douwa
+    horror-comics-special: Horror Comics Special
+    horror-m: Horror M
+    ichibansuki: Ichibansuki
+    ichijinsha: Ichijinsha
+    ichijinsha-mobile: Ichijinsha Mobile
+    ichiraci: Ichiraci
+    ichisuki: Ichisuki
+    ihr-hertz: ihr hertZ
+    ikki: Ikki
+    infernal-boys: Infernal Boys
+    iq-jump: IQ Jump
+    issue: Issue
+    itan: ITAN
+    jaedam-media: Jaedam Media
+    jidaigeki-manga-jin: Jidaigeki Manga JIN
+    josei-seven: Josei Seven
+    jour-suteki-na-shufutachi: Jour Suteki na Shufutachi
+    judy: Judy
+    juicy: Juicy
+    julian-publishing: Julian Publishing
+    jump-giga: Jump GIGA
+    jump-live: Jump LIVE
+    jump-sq: Jump SQ
+    jump-sq-lab: Jump SQ. LaB
+    jump-sq-19: Jump SQ.19
+    jump-sq-crown: Jump SQ.Crown
+    jump-vs: Jump VS
+    jump-x: Jump X
+    jun-ai-kajitsu: Jun-ai Kajitsu
+    june: JUNE
+    june-comics: June Comics
+    june-comics-piace-series: June Comics Piace Series
+    juniorchamp: JuniorChamp
+    junk-boy: Junk! Boy
+    junkudo: Junkudo
+    just-comic: Just Comic
+    kadokawa-niconico-ace: Kadokawa Niconico Ace
+    kaiousha: Kaiousha
+    kakaopage-kakao: KakaoPage (Kakao)
+    kantan-ubuntu: Kantan Ubuntu!
+    karen: Karen
+    karyou-gakuen-shotoubu: Karyou Gakuen Shotoubu
+    kera: KERA
+    kerokero-ace: KeroKero Ace
+    kg: KG
+    kibou-no-tomo: Kibou no Tomo
+    kidari-studio: Kidari Studio
+    kimi-to-boku: Kimi to Boku
+    kindai-mahjong: Kindai Mahjong
+    kindai-mahjong-gold: Kindai Mahjong Gold
+    kindai-mahjong-original: Kindai Mahjong Original
+    kinniku-otoko: Kinniku Otoko
+    kirara-16: Kirara 16
+    kiss: Kiss
+    kiss_2: Kiss+
+    kissca: KiSSCA
+    kissui: Kissui
+    koi-june: Koi June
+    kono-manga-ga-sugoi-web: Kono Manga ga Sugoi! Web
+    koushoku-shounen: Koushoku Shounen
+    kuaikan-manhua: Kuaikan Manhua
+    kurage-bunch: Kurage Bunch
+    kuro-lala: Kuro LaLa
+    kurofune-momo: Kurofune Momo
+    kurofune-pixiv: Kurofune Pixiv
+    kurofune-zero: Kurofune Zero
+    kw-books: KW Books
+    lala: LaLa
+    lala-dx: LaLa DX
+    lala-melody-online: LaLa Melody Online
+    lala-special: LaLa Special
+    lc-mystery-comic: LC Mystery Comic
+    leed-comic: Leed Comic
+    lezhin: Lezhin
+    libre-shuppan: Libre Shuppan
+    love-mission: Love Mission
+    magalabo: Magalabo
+    magazine-be-x-boy: Magazine Be x Boy
+    magazine-cyberia: Magazine Cyberia
+    magazine-e-no: Magazine E-no
+    magazine-pocket: Magazine pocket
+    magazine-special: Magazine Special
+    magazine-wooooo: Magazine WOoooo!
+    magazine-wooooo-b-gumi: Magazine WOoooo! B-gumi
+    magazine-z: Magazine-Z
+    magcomi: MAGCOMI
+    magi-cu: Magi-Cu
+    mandala: Mandala
+    manga-4-koma-palette: Manga 4-koma Palette
+    manga-action: Manga Action
+    manga-ai-hime: Manga Ai! Hime
+    manga-aiki: Manga Aiki
+    manga-allman: Manga Allman
+    manga-bangaichi: Manga Bangaichi
+    manga-bon: Manga Bon
+    manga-box: Manga Box
+    manga-club: Manga Club
+    manga-club-original: Manga Club Original
+    manga-erotics-f: Manga Erotics F
+    manga-goccha: Manga Goccha
+    manga-goraku: Manga Goraku
+    manga-goraku-dokuhon: Manga Goraku dokuhon
+    manga-grimm-douwa: Manga Grimm Douwa
+    manga-home: Manga Home
+    manga-hot-milk: Manga Hot Milk
+    manga-kisoutengai: Manga Kisoutengai
+    manga-life: Manga Life
+    manga-life-momo: Manga Life MOMO
+    manga-life-original: Manga Life Original
+    manga-life-storia: Manga Life STORIA
+    manga-life-win: Manga Life Win
+    manga-palette-lite: Manga Palette Lite
+    manga-shonen: Manga Shonen
+    manga-shounen: Manga Shounen
+    manga-sunday-weekly: Manga Sunday (Weekly)
+    manga-time: Manga Time
+    manga-time-family: Manga Time Family
+    manga-time-jumbo: Manga Time Jumbo
+    manga-time-kirara: Manga Time Kirara
+    manga-time-kirara-carat: Manga Time Kirara Carat
+    manga-time-kirara-forward: Manga Time Kirara Forward
+    manga-time-kirara-max: Manga Time Kirara Max
+    manga-time-kirara-miracle: Manga Time Kirara Miracle!
+    manga-time-kirara-magica: Manga Time Kirara☆Magica
+    manga-time-lovely: Manga Time Lovely
+    manga-time-original: Manga Time Original
+    manga-time-special: Manga Time Special
+    manga-town: Manga Town
+    manga-up: Manga UP!
+    manga-zettai-manzoku: Manga Zettai Manzoku
+    mangaone: MangaONE
+    marble: MARBLE
+    margaret: Margaret
+    margaret-bookstore: Margaret Bookstore
+    marukatsu-famicom: Marukatsu Famicom
+    matogrosso: Matogrosso
+    me: Me
+    mebae: Mebae
+    megami-magazine: Megami Magazine
+    megastore: Megastore
+    mei: Mei
+    mellow-mellow: Mellow Mellow
+    melody: Melody
+    melon-comic: Melon Comic
+    men-s-gold: Men's GOLD
+    men-s-young: Men's Young
+    men-s-young-special-ikazuchi: Men's Young Special Ikazuchi
+    meng-meng-guan: Meng Meng Guan
+    mephisto: Mephisto
+    michao: MiChao
+    miku-pack: MIKU-Pack
+    millefeui: Millefeui
+    miracle-jump: Miracle Jump
+    mist-magazine: Mist Magazine
+    mobile-flower: Mobile Flower
+    mobile-man: Mobile Man
+    moca: moca
+    model-graphix: Model Graphix
+    moment: moment
+    mon-mon: Mon Mon
+    monster-comics: Monster Comics
+    monthly-action: Monthly Action
+    monthly-qoopa: Monthly QooPA!
+    morning: Morning
+    morning-kc: Morning KC
+    morning-two: Morning Two
+    motto: motto!
+    mr-magazine: Mr. Magazine
+    mrblue: MrBlue
+    mugen-anthology-series: Mugen Anthology Series
+    mugenkan: Mugenkan
+    muteki-renai-s-girl: Muteki Renai S*girl
+    mystery-bonita: Mystery Bonita
+    nakayoshi: Nakayoshi
+    nakayoshi-deluxe: Nakayoshi Deluxe
+    nakayoshi-lovely: Nakayoshi Lovely
+    namaiki: Namaiki!
+    nate-manhwa: Nate Manhwa
+    naver-webtoon: Naver Webtoon
+    neko-para: Neko Para
+    nekopanchi: Nekopanchi
+    nemesis: Nemesis
+    nemuki: Nemuki
+    new-youth: New Youth
+    newtype: Newtype
+    newtype-ace: Newtype Ace
+    next-comic-first: Next Comic First
+    nico-nico-seiga: Nico Nico Seiga
+    nikutaiha: Nikutaiha
+    novel-japan: Novel Japan
+    nyantype: NyanType
+    office-you: Office YOU
+    oh-super-jump: Oh Super Jump
+    ohzora-shuppan: Ohzora Shuppan
+    onblue: onBLUE
+    online-zero-sum: Online ZERO-SUM
+    opera: Opera
+    osiem-macek: Osiem Macek
+    oto-nyan: Oto Nyan
+    otoko-no-ko-jidai: Otoko no Ko Jidai
+    otome-high: Otome High!
+    oyajism: Oyajism
+    pachinko-777: Pachinko 777
+    paradigm: Paradigm
+    party: Party
+    pastel-comics: Pastel Comics
+    persona-magazine: Persona Magazine
+    petit-comic: Petit Comic
+    petit-flower: Petit Flower
+    petit-princess: Petit Princess
+    phryne: Phryné
+    piace: Piace
+    play-comic: Play Comic
+    pocopoco: pocopoco
+    ponimaga: Ponimaga
+    poplar-comics: Poplar Comics
+    pre-comic-bunbun: Pre-Comic Bunbun
+    prince-quarterly: Prince (Quarterly)
+    princess: Princess
+    princess-gold: Princess Gold
+    pureri: Pureri
+    qpa-takeshobo: Qpa (Takeshobo)
+    quick-japan: Quick Japan
+    racish: Racish
+    rakuen-le-paradis: Rakuen Le Paradis
+    rakuen-web-zoukan: Rakuen Web Zoukan
+    regina: Regina
+    reijin: Reijin
+    reijin-bravo: Reijin Bravo!
+    reijin-uno: Reijin Uno!
+    renai-hakusho-pastel: Renai Hakusho Pastel
+    renai-love-max: Renai Love MAX
+    renai-paradise: Renai Paradise
+    renai-revolution: Renai Revolution
+    ribon-bikkuri: Ribon Bikkuri
+    ribon-deluxe: Ribon Deluxe
+    ribon-magazine: Ribon Magazine
+    ribon-mascot: Ribon Mascot
+    ribon-original: Ribon Original
+    ribon-special: Ribon Special
+    ridi-corporation: Ridi Corporation
+    rinka: Rinka
+    run-run: Run Run
+    rutile: RuTile
+    rutile-sweet: RuTiLe Sweet
+    saikyou-jump: Saikyou Jump
+    saizensen: Saizensen
+    sakura-hearts: Sakura Hearts
+    samurai-ace: Samurai Ace
+    seikaisha-comics: Seikaisha COMICS
+    sengoku-bushou-retsuden: Sengoku Bushou Retsuden
+    serie-mystery: Serie Mystery
+    seventeen-monthly: Seventeen (Monthly)
+    sf-adventure: SF Adventure
+    sf-magazine: SF Magazine
+    shiro-lala: Shiro LaLa
+    sho-comi: Sho-Comi
+    sho-comi-zoukan: Sho-Comi Zoukan
+    shogakukan-books: Shogakukan Books
+    shojo-beat: Shojo Beat
+    shonen-shojo-bokeno: Shonen Shojo Bokeno
+    shougaku-gonensei: Shougaku Gonensei
+    shougaku-ninensei: Shougaku Ninensei
+    shougaku-sannensei: Shougaku Sannensei
+    shougaku-yonensei: Shougaku Yonensei
+    shoujo-club: Shoujo Club
+    shoujo-friend: Shoujo Friend
+    shoujo-teikoku: Shoujo Teikoku
+    shounen-magazyn: Shounen (magazyn)
+    shounen-ace: Shounen Ace
+    shounen-ace-plus: Shounen Ace Plus
+    shounen-big-comic: Shounen Big Comic
+    shounen-captain: Shounen Captain
+    shounen-champion-monthly: Shounen Champion (Monthly)
+    shounen-champion-weekly: Shounen Champion (Weekly)
+    shounen-club: Shounen Club
+    shounen-edgestar: Shounen Edgestar
+    shounen-fang: Shounen Fang
+    shounen-gangan: Shounen Gangan
+    shounen-jets-monthly: Shounen Jets (Monthly)
+    shounen-jump-monthly: Shounen Jump (Monthly)
+    shounen-jump-weekly: Shounen Jump (Weekly)
+    shounen-jump-next: Shounen Jump NEXT!
+    shounen-jump: Shounen Jump+
+    shounen-king: Shounen King
+    shounen-magazine-monthly: Shounen Magazine (Monthly)
+    shounen-magazine-weekly: Shounen Magazine (Weekly)
+    shounen-magazine-edge: Shounen Magazine Edge
+    shounen-magazine-r: Shounen Magazine R
+    shounen-rival: Shounen Rival
+    shounen-sirius: Shounen Sirius
+    shounen-sunday: Shounen Sunday
+    shounen-sunday-weekly: Shounen Sunday (Weekly)
+    shounen-sunday-super: Shounen Sunday Super
+    shounen-takarajima-weekly: Shounen Takarajima (Weekly)
+    shousetsu-b-boy: Shousetsu B-Boy
+    shousetsu-chocolat: Shousetsu Chocolat
+    shousetsu-june: Shousetsu June
+    showten: Showten
+    shy: Shy
+    shy-novels: Shy Novels
+    silky: Silky
+    special-edition-girls-comic: Special Edition Girls' Comic
+    star-girls-comic: Star Girls
+    stencil: Stencil
+    studio-jg: Studio JG
+    studio-voice: Studio Voice
+    sugar: Sugar
+    suiyoubi-no-sirius: Suiyoubi no Sirius
+    suiyoubi-wa-mattari-dash-x-comic: Suiyoubi wa Mattari Dash X Comic
+    sunday-gene-x: Sunday Gene-X
+    sunday-webry: Sunday Webry
+    super-beboy-comics: Super Beboy Comics
+    super-dash-go: Super Dash & Go!
+    super-jump: Super Jump
+    super-manga-blast: Super Manga Blast
+    super-robot-magazine: super Robot Magazine
+    suspiria: Suspiria
+    swan-magazine: Swan Magazine
+    sylph: Sylph
+    taiyo-tosho: Taiyo Tosho
+    tales-of-magazine: Tales of Magazine
+    tapas: Tapas
+    tech-gian: Tech Gian
+    televi-magazine: Televi Magazine
+    televi-magazine-zoukan-tele-manga-heros: Televi Magazine Zoukan Tele Manga Heros
+    the-dessert: The Dessert
+    the-hana-to-yume: The Hana to Yume
+    the-margaret: The Margaret
+    the-sneaker: The Sneaker
+    the-sneaker-web: The Sneaker Web
+    tokusatsu-ace: Tokusatsu Ace
+    tonari-no-young-jump: Tonari no Young Jump
+    tsubomi: Tsubomi
+    twi4: twi4
+    type-moon-ace: TYPE-MOON Ace
+    u17: u17
+    ultra-jump: Ultra Jump
+    ultra-jump-egg: Ultra Jump Egg
+    un-poco: Un Poco
+    uppers-kodansha: Uppers (Kodansha)
+    ura-sunday: Ura Sunday
+    v-jump: V-Jump
+    vanilla: Vanilla
+    vitaman: Vitaman
+    viva-tales-of-magazine: Viva☆Tales of Magazine
+    waai: WAaI!
+    waai-mahalo: WAaI! Mahalo
+    waneko: Waneko
+    web-comic-action: Web Comic Action
+    web-comic-beat-s: Web Comic Beat's
+    web-comic-eden: Web Comic EDEN
+    web-comic-gamma: Web Comic Gamma
+    web-comic-gamma-plus: Web Comic Gamma Plus
+    web-comic-gekkin: Web Comic Gekkin
+    web-comic-high: Web Comic High!
+    web-comic-zenyon: Web Comic Zenyon
+    web-ikipara-comic: Web Ikipara Comic
+    web-magazine-wings: Web Magazine Wings
+    web-spica: Web Spica
+    weekly-ascii: Weekly ASCII
+    weekly-manga-times: Weekly Manga Times
+    weekly-playboy: Weekly Playboy
+    wings: Wings
+    wink: Wink
+    wonderland: Wonderland
+    wydawnictwo-okami: Wydawnictwo Okami
+    wydawnictwo-j-p-fantastica: Wydawnictwo J.P.Fantastica
+    wydawnictwo-kotori-beata-bamber: Wydawnictwo KOTORI Beata Bamber
+    wydawnictwo-ringo-ame: Wydawnictwo RINGO AME
+    wydawnictwo-taiga: Wydawnictwo Taiga
+    wydawnictwo-tenko: Wydawnictwo Tenko
+    wydawnictwo-yumegari: Wydawnictwo Yumegari
+    x-magazine: X Magazine
+    yawaraka-spirits: Yawaraka Spirits
+    yen-press: Yen Press
+    yeondam-comic: Yeondam Comic
+    yomban: Yomban
+    yomiuri-shimbun: Yomiuri Shimbun
+    you: You
+    young-ace: Young Ace
+    young-ace-up: Young Ace UP
+    young-animal: Young Animal
+    young-animal-arashi: Young Animal Arashi
+    young-animal-densi: Young Animal Densi
+    young-animal-island: Young Animal Island
+    young-champ: Young Champ
+    young-champion-magazine: Young Champion Magazine
+    young-champion-retsu: Young Champion Retsu
+    young-comic: Young Comic
+    young-gangan: Young Gangan
+    young-hip: Young Hip
+    young-jump: Young Jump
+    young-jump-monthly: Young Jump (Monthly)
+    young-king: Young King
+    young-king-monthly: Young King (Monthly)
+    young-king-ours: Young King Ours
+    young-king-ours-gh: Young King OURs GH
+    young-king-ours_2: Young King Ours+
+    young-magazine-monthly: Young Magazine (Monthly)
+    young-magazine-weekly: Young Magazine (Weekly)
+    young-magazine-the-3rd: Young Magazine the 3rd
+    young-magazine-uppers: Young Magazine Uppers
+    young-magazine-web: Young Magazine Web
+    young-manga: Young Manga
+    young-sunday-weekly: Young Sunday (Weekly)
+    young-you: Young You
+    yuri-shimai: Yuri Shimai
+    yuri-koi: Yuri☆Koi
+    zero: ZERO
+    zero-comics: Zero Comics
+    zero-sum-online: Zero-Sum Online
+    zero-sum-ward: Zero-Sum WARD
+    zettai-renai-sweet: Zettai Renai Sweet
+    zipper: Zipper
+    zoukan-young-gangan: Zoukan Young Gangan
+  source-material:
+    anime: Anime
+    game: Gra komputerowa
+    game-other: Gry (inne)
+    inne: Inne
+    card-game: Karcianka
+    book: Książka
+    light-novel: Light novel
+    manga: Manga
+    4-koma-manga: Manga 4-koma
+    novel: Novel
+    original: Seria oryginalna
+    visual-novel: Visual novel
+    web-manga: Web manga
+    web-novel: Web novel

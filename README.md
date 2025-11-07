@@ -440,6 +440,25 @@ This library uses the following main dependencies:
 - **Apache Commons Lang3** (3.12.0) - Utility functions
 - **Lombok** (1.18.34) - Boilerplate code reduction
 
+## Development
+
+### Generating Enums
+
+The `shinden-enums` module contains auto-generated tag enums (studios, genres, etc.). To regenerate them from the latest
+Shinden data:
+
+```bash
+mvn clean compile -pl shinden-enums -am -Pgenerate-enums
+```
+
+This command will:
+
+1. Fetch current data from Shinden.pl
+2. Generate enum classes directly in `shinden-enums/src/main/java`
+3. Update translation file in `shinden-enums/src/main/resources/tags-translation.yaml`
+
+For more details, see [shinden-enums/README.md](shinden-enums/README.md).
+
 ## License
 
 Shinden4j is licensed under the MIT License. See [LICENSE](LICENSE) for more information.
