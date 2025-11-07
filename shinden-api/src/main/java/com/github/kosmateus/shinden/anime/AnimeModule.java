@@ -2,6 +2,7 @@ package com.github.kosmateus.shinden.anime;
 
 import com.github.kosmateus.shinden.anime.mapper.AnimeDetailsMapper;
 import com.github.kosmateus.shinden.anime.mapper.AnimeSearchMapper;
+import com.github.kosmateus.shinden.anime.mapper.VideoSourceMapper;
 import com.github.kosmateus.shinden.auth.SessionManager;
 import com.github.kosmateus.shinden.http.HttpModule;
 import com.github.kosmateus.shinden.utils.ValidationInvocationHandler;
@@ -41,6 +42,7 @@ public class AnimeModule extends AbstractModule {
         bind(AnimeApi.class).toProvider(AnimeApiProvider.class).in(Singleton.class);
         bind(AnimeSearchMapper.class).in(Singleton.class);
         bind(AnimeDetailsMapper.class).in(Singleton.class);
+        bind(VideoSourceMapper.class).in(Singleton.class);
     }
 
     /**

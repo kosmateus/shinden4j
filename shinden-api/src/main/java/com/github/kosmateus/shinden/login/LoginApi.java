@@ -36,4 +36,5 @@ public interface LoginApi {
      * @throws JsoupParserException          if an error occurs while parsing the web page.
      */
     LoginDetails login(@Valid @NotNull LoginRequest loginRequest);
+
 }

@@ -40,7 +40,12 @@ public enum UrlType {
     /**
      * Represents a URL type for manga.
      */
-    MANGA("manga");
+    MANGA("manga"),
+
+    /**
+     * Represents a URL type for books.
+     */
+    BOOKS("books");
 
     /**
      * The string value associated with the URL type.

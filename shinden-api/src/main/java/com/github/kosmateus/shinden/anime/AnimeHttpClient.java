@@ -1,12 +1,14 @@
 package com.github.kosmateus.shinden.anime;
 
 import com.github.kosmateus.shinden.anime.request.AnimeSearchRequest.SortType;
+import com.github.kosmateus.shinden.auth.SessionManager;
 import com.github.kosmateus.shinden.http.request.HttpRequest;
 import com.github.kosmateus.shinden.http.request.HttpRequest.KeyValue;
 import com.github.kosmateus.shinden.http.response.ResponseHandler;
 import com.github.kosmateus.shinden.http.rest.HttpClient;
 import com.github.kosmateus.shinden.request.FixedPageable;
 import com.github.kosmateus.shinden.request.Sort;
+import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableMap;
 import com.google.inject.Inject;
 import lombok.RequiredArgsConstructor;
@@ -14,6 +16,7 @@ import lombok.RequiredArgsConstructor;
 import java.util.ArrayList;
 import java.util.List;
 
+import static com.github.kosmateus.shinden.constants.ShindenConstants.SHHNDEN_API_4_URL;
 import static com.github.kosmateus.shinden.constants.ShindenConstants.SHINDEN_URL;
 
 /**
@@ -27,6 +30,7 @@ import static com.github.kosmateus.shinden.constants.ShindenConstants.SHINDEN_UR
 @RequiredArgsConstructor(onConstructor_ = @__(@Inject))
 class AnimeHttpClient {
     private final HttpClient httpClient;
+    private final SessionManager sessionManager;
 
     /**
      * Searches for anime titles using the specified query parameters and pagination details.
@@ -101,6 +105,30 @@ class AnimeHttpClient {
         return httpClient.get(HttpRequest.builder()
                 .target(SHINDEN_URL)
                 .path("/titles/" + animeId + "/stats")
+                .build(), String.class);
+    }
+
+    ResponseHandler<String> getVideoSources(Long animeId, Long episodeId) {
+        return httpClient.get(HttpRequest.builder()
+                .target(SHINDEN_URL)
+                .headers(ImmutableMap.of("accept-language", "en-US,en;q=0.9,pl-PL;q=0.8,pl;q=0.7"))
+                .path("/epek/" + animeId + "/view/" + episodeId)
+                .build(), String.class);
+    }
+
+    ResponseHandler<String> getLoadPlayerTime(Long videoSourceId) {
+        return httpClient.get(HttpRequest.builder()
+                .target(SHHNDEN_API_4_URL)
+                .path("/xhr/" + videoSourceId + "/player_load")
+                .queryParams(ImmutableList.of(KeyValue.of("auth", sessionManager.getAuthToken())))
+                .build(), String.class);
+    }
+
+    ResponseHandler<String> getPlayer(Long videoSourceId) {
+        return httpClient.get(HttpRequest.builder()
+                .target(SHHNDEN_API_4_URL)
+                .path("/xhr/" + videoSourceId + "/player_show")
+                .queryParams(ImmutableList.of(KeyValue.of("auth", sessionManager.getAuthToken()), KeyValue.of("width", "1080"), KeyValue.of("height", "-1")))
                 .build(), String.class);
     }
 }

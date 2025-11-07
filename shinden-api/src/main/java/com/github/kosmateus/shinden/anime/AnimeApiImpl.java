@@ -2,10 +2,13 @@ package com.github.kosmateus.shinden.anime;
 
 import com.github.kosmateus.shinden.anime.mapper.AnimeDetailsMapper;
 import com.github.kosmateus.shinden.anime.mapper.AnimeSearchMapper;
+import com.github.kosmateus.shinden.anime.mapper.VideoSourceMapper;
 import com.github.kosmateus.shinden.anime.request.AnimeSearchRequest;
 import com.github.kosmateus.shinden.anime.request.AnimeSearchRequest.SortType;
+import com.github.kosmateus.shinden.anime.request.VideoSourceRequest;
 import com.github.kosmateus.shinden.anime.response.AnimeDetails;
 import com.github.kosmateus.shinden.anime.response.AnimeSearchResult;
+import com.github.kosmateus.shinden.anime.response.VideoSource;
 import com.github.kosmateus.shinden.auth.SessionManager;
 import com.github.kosmateus.shinden.http.response.ResponseHandler;
 import com.github.kosmateus.shinden.request.FixedPageable;
@@ -18,7 +21,10 @@ import org.apache.commons.lang3.tuple.Pair;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 
+import javax.annotation.Nullable;
+import java.util.Comparator;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
@@ -54,6 +60,7 @@ public class AnimeApiImpl implements AnimeApi {
     private final AnimeHttpClient httpClient;
     private final AnimeSearchMapper searchMapper;
     private final AnimeDetailsMapper detailsMapper;
+    private final VideoSourceMapper videoSourceMapper;
     private final SessionManager sessionManager;
 
     /**
@@ -125,6 +132,45 @@ public class AnimeApiImpl implements AnimeApi {
         }
     }
 
+    @Override
+    public List<VideoSource> getVideoSources(VideoSourceRequest request) {
+        Document episodeVideoSources = parseToDocument(httpClient.getVideoSources(request.getAnimeId(), request.getEpisodeId()));
+        List<VideoSource> videoSources = videoSourceMapper.intialMapping(episodeVideoSources);
+        videoSources = filterVideoSources(videoSources, request);
+        return sortVideoSources(videoSources, request.getSort());
+    }
+
+    @Override
+    public List<String> videoSourceUrl(Long sourceId) {
+        try {
+            // Get load player time
+            ResponseHandler<String> loadTimeResponse = httpClient.getLoadPlayerTime(sourceId);
+            validateResponse(loadTimeResponse);
+
+            // Parse wait time in seconds
+            int waitTimeSeconds = Integer.parseInt(loadTimeResponse.getEntity().trim());
+
+            // Wait for the specified time
+            if (waitTimeSeconds > 0) {
+                TimeUnit.SECONDS.sleep(waitTimeSeconds);
+            }
+
+            // Get player HTML
+            ResponseHandler<String> playerResponse = httpClient.getPlayer(sourceId);
+            validateResponse(playerResponse);
+
+            // Extract iframe src URL
+            return videoSourceMapper.extractIframeSrc(parseToDocument(playerResponse));
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+            log.error("Interrupted while waiting for load player time for source ID: " + sourceId, e);
+            return null;
+        } catch (Exception e) {
+            log.error("Failed to fetch URL for video source ID: " + sourceId, e);
+            return null;
+        }
+    }
+
     private Document parseToDocument(ResponseHandler<String> response) {
         validateResponse(response);
         return Jsoup.parse(response.getEntity());
@@ -152,5 +198,83 @@ public class AnimeApiImpl implements AnimeApi {
             return Pair.of(pageNumber, lastPage.getEntity());
         }
         return null;
+    }
+
+    /**
+     * Filters video sources based on the request criteria.
+     *
+     * @param videoSources the list of video sources to filter
+     * @param request      the {@link VideoSourceRequest} containing filter criteria
+     * @return filtered list of video sources
+     */
+    private List<VideoSource> filterVideoSources(List<VideoSource> videoSources, VideoSourceRequest request) {
+        return videoSources.stream()
+                .filter(source -> request.getServices() == null ||
+                        request.getServices().isEmpty() ||
+                        request.getServices().stream().anyMatch(s -> s.equalsIgnoreCase(source.getService())))
+                .filter(source -> request.getQualities() == null ||
+                        request.getQualities().isEmpty() ||
+                        request.getQualities().contains(source.getQuality()))
+                .filter(source -> request.getSubtitlesLanguages() == null ||
+                        request.getSubtitlesLanguages().isEmpty() ||
+                        request.getSubtitlesLanguages().stream().anyMatch(lang -> lang.equalsIgnoreCase(source.getSubtitlesLanguage())))
+                .filter(source -> request.getAudioLanguages() == null ||
+                        request.getAudioLanguages().isEmpty() ||
+                        request.getAudioLanguages().stream().anyMatch(lang -> lang.equalsIgnoreCase(source.getAudioLanguage())))
+                .collect(java.util.stream.Collectors.toList());
+    }
+
+    /**
+     * Sorts video sources based on the provided sort criteria.
+     *
+     * @param videoSources the list of video sources to sort
+     * @param sort         the {@link Sort} object containing sorting criteria
+     * @return sorted list of video sources
+     */
+    private List<VideoSource> sortVideoSources(List<VideoSource> videoSources, @Nullable Sort<VideoSourceRequest.SortType> sort) {
+        if (sort == null || sort.isUnsorted()) {
+            return videoSources;
+        }
+
+        Comparator<VideoSource> comparator = null;
+
+        for (Sort.Order<VideoSourceRequest.SortType> order : sort.getOrders()) {
+            Comparator<VideoSource> fieldComparator = getComparatorForField(order.getProperty());
+
+            if (order.getDirection() == Sort.Direction.DESC) {
+                fieldComparator = fieldComparator.reversed();
+            }
+
+            comparator = comparator == null ? fieldComparator : comparator.thenComparing(fieldComparator);
+        }
+
+        if (comparator != null) {
+            videoSources.sort(comparator);
+        }
+
+        return videoSources;
+    }
+
+    /**
+     * Returns a comparator for the specified sort field.
+     *
+     * @param sortType the field to sort by
+     * @return comparator for the specified field
+     */
+    private Comparator<VideoSource> getComparatorForField(VideoSourceRequest.SortType sortType) {
+        switch (sortType) {
+            case SERVICE:
+                return Comparator.comparing(VideoSource::getService, Comparator.nullsLast(String.CASE_INSENSITIVE_ORDER));
+            case QUALITY:
+                return Comparator.comparing(VideoSource::getQuality, Comparator.nullsLast(Comparator.naturalOrder()));
+            case SUBTITLES_LANGUAGE:
+                return Comparator.comparing(VideoSource::getSubtitlesLanguage, Comparator.nullsLast(String.CASE_INSENSITIVE_ORDER));
+            case AUDIO_LANGUAGE:
+                return Comparator.comparing(VideoSource::getAudioLanguage, Comparator.nullsLast(String.CASE_INSENSITIVE_ORDER));
+            case CREATED_AT:
+                return Comparator.comparing(VideoSource::getCreatedAt, Comparator.nullsLast(Comparator.naturalOrder()));
+            default:
+                return Comparator.comparing(VideoSource::getCreatedAt, Comparator.nullsLast(Comparator.naturalOrder()));
+        }
     }
 }

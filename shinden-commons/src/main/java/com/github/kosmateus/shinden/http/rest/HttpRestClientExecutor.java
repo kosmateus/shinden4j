@@ -11,6 +11,7 @@ import com.github.kosmateus.shinden.http.response.EmptyReason;
 import com.github.kosmateus.shinden.http.response.ErrorDetails;
 import com.github.kosmateus.shinden.http.response.ResponseHandler;
 import com.google.inject.Inject;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.tuple.Pair;
 import org.apache.http.Header;
@@ -32,6 +33,7 @@ import org.apache.http.util.EntityUtils;
 import java.io.IOException;
 import java.net.URI;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.Map;
 import java.util.function.Supplier;
 import java.util.stream.Collectors;
@@ -53,6 +55,7 @@ import java.util.stream.Collectors;
  *
  * @version 1.0.0
  */
+@Slf4j
 class HttpRestClientExecutor {
 
     private final CloseableHttpClient client;
@@ -163,7 +166,11 @@ class HttpRestClientExecutor {
             }
         }
 
+        logRequestDetails(request, httpRequest);
+
         try (CloseableHttpResponse response = client.execute(request)) {
+            logResponseDetails(response);
+            updateCookies(response);
             return responseHandlerFunction.handle(response);
         } catch (IOException e) {
             return handleIOException(e);
@@ -309,6 +316,87 @@ class HttpRestClientExecutor {
                 ErrorDetails.builder().message(e.getMessage())
                         .errorName("Unexpected exception during REST call").build()));
     }
+
+    public void updateCookies(CloseableHttpResponse response) {
+        Map<String, String> cookiesToUpdate = response.getHeaders("Set-Cookie") != null ?
+                Arrays.stream(response.getHeaders("Set-Cookie"))
+                        .map(Header::getValue)
+                        .map(cookieStr -> cookieStr.split(";", 2)[0])
+                        .map(cookiePair -> cookiePair.split("=", 2))
+                        .filter(parts -> parts.length == 2)
+                        .collect(Collectors.toMap(parts -> parts[0], parts -> parts[1]))
+                : new HashMap<>();
+        if (!cookiesToUpdate.isEmpty()) {
+            sessionManager.updateCookies(cookiesToUpdate);
+        }
+    }
+
+
+    /**
+     * Logs details of the HTTP request at DEBUG level.
+     *
+     * @param request     the {@link HttpUriRequest} being executed
+     * @param httpRequest the original {@link HttpRequest} with additional details
+     */
+    private void logRequestDetails(HttpUriRequest request, HttpRequest httpRequest) {
+        if (!log.isDebugEnabled()) {
+            return;
+        }
+
+        StringBuilder logMessage = new StringBuilder();
+        logMessage.append(request.getMethod()).append(" ").append(request.getURI());
+
+        if (request.getAllHeaders() != null && request.getAllHeaders().length > 0) {
+            logMessage.append(", headers=[");
+            logMessage.append(Arrays.stream(request.getAllHeaders())
+                    .map(header -> header.getName() + ":\"" + header.getValue() + "\"")
+                    .collect(Collectors.joining(", ")));
+            logMessage.append("]");
+        }
+
+        if (StringUtils.isNotBlank(httpRequest.getBody())) {
+            logMessage.append(", body=").append(httpRequest.getBody());
+        }
+
+        if (httpRequest.getFormFields() != null && !httpRequest.getFormFields().isEmpty()) {
+            logMessage.append(", formFields=").append(httpRequest.getFormFields());
+        }
+
+        if (httpRequest.getFileResources() != null && !httpRequest.getFileResources().isEmpty()) {
+            logMessage.append(", files=").append(httpRequest.getFileResources().keySet());
+        }
+
+        log.debug(logMessage.toString());
+    }
+
+    /**
+     * Logs details of the HTTP response at DEBUG level.
+     *
+     * @param response the {@link CloseableHttpResponse} received from the server
+     */
+    private void logResponseDetails(CloseableHttpResponse response) {
+        if (!log.isDebugEnabled()) {
+            return;
+        }
+
+        StringBuilder logMessage = new StringBuilder();
+        logMessage.append(response.getStatusLine().getStatusCode())
+                .append(" ")
+                .append(response.getStatusLine().getReasonPhrase());
+
+        if (response.getAllHeaders() != null && response.getAllHeaders().length > 0) {
+            logMessage.append(", headers=[");
+            logMessage.append(Arrays.stream(response.getAllHeaders())
+                    .map(header -> header.getName() + ":\"" + header.getValue() + "\"")
+                    .collect(Collectors.joining(", ")));
+            logMessage.append("]");
+        }
+
+        log.debug(logMessage.toString());
+    }
+
+
+
 
     @FunctionalInterface
     private interface ResponseHandlerFunction<T> {

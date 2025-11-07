@@ -103,4 +103,11 @@ public interface SessionManager {
      * @param headers a {@link Map} of cookies, where the key is the cookie name and the value is the cookie value.
      */
     void setCookies(Map<String, String> headers);
+
+    /**
+     * Updates the existing cookies with new values.
+     *
+     * @param newCookies a {@link Map} of new cookies to be added or updated.
+     */
+    void updateCookies(Map<String, String> newCookies);
 }

@@ -441,9 +441,9 @@ public class AnimeDetailsMapper extends BaseDocumentMapper {
                 .select("section.box h2:matchesOwn(^Powiązane Serie$) ~ ul.figure-list li.relation_t2t")
                 .mapTo(e -> {
                     Integer id = mapper.with(e)
-                            .selectFirst("figcaption > a[href^='/titles/'], figcaption > a[href^='/manga/'], figcaption > a[href^='/series/']")
+                            .selectFirst("figcaption > a[href^='/titles/'], figcaption > a[href^='/manga/'], figcaption > a[href^='/series/'], , figcaption > a[href^='/books/']")
                             .attr("href")
-                            .pattern(PatternMatcher.match("/(?:titles|manga|series)/(\\d+)", 1))
+                            .pattern(PatternMatcher.match("/(?:titles|manga|series|books)/(\\d+)", 1))
                             .toInteger()
                             .orThrowWithCode("connected-title.id");
                     TitleConnectionType connectionType = mapper.with(e)

@@ -2,8 +2,12 @@ package com.github.kosmateus.shinden.anime;
 
 import com.github.kosmateus.shinden.BaseTest;
 import com.github.kosmateus.shinden.anime.request.AnimeSearchRequest;
+import com.github.kosmateus.shinden.anime.request.VideoSourceRequest;
+import com.github.kosmateus.shinden.anime.request.VideoSourceRequest.SortType;
 import com.github.kosmateus.shinden.anime.response.AnimeDetails;
 import com.github.kosmateus.shinden.anime.response.AnimeSearchResult;
+import com.github.kosmateus.shinden.anime.response.VideoSource;
+import com.github.kosmateus.shinden.anime.response.VideoSource.VideoQuality;
 import com.github.kosmateus.shinden.common.enums.MPAA;
 import com.github.kosmateus.shinden.common.enums.TitleStatus;
 import com.github.kosmateus.shinden.common.enums.TitleType;
@@ -13,6 +17,7 @@ import com.github.kosmateus.shinden.request.FixedPageable;
 import com.github.kosmateus.shinden.request.Sort;
 import com.github.kosmateus.shinden.response.Page;
 import lombok.extern.slf4j.Slf4j;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
@@ -35,9 +40,10 @@ class AnimeApiTest extends BaseTest {
         @Test
         @DisplayName("Should find all anime")
         void shouldFindAllAnime() {
-            Page<AnimeSearchResult> animeSearchResults = animeApi.searchAnime(AnimeSearchRequest.EMPTY, FixedPageable.of(1, Sort.by(TITLE.desc())));
+            Page<AnimeSearchResult> animeSearchResults = animeApi.searchAnime(AnimeSearchRequest.EMPTY, FixedPageable.of(1, Sort.by(TITLE.asc())));
             assertThat(animeSearchResults).isNotNull();
             assertThat(animeSearchResults.getContent()).isNotEmpty();
+            saveJsonInTarget(animeSearchResults, "anime-search-all-page-1.json");
         }
 
     }
@@ -45,6 +51,14 @@ class AnimeApiTest extends BaseTest {
     @Nested
     @DisplayName("Anime details tests")
     class AnimeDetailsTest {
+
+        @Test
+        @Disabled("For local test purposes only")
+        void saveAsJson() {
+            login();
+            AnimeDetails anime = animeApi.getAnime(60514L);
+            saveJsonInTarget(anime, "anime-details-60514.json");
+        }
 
         @Test
         @DisplayName("Should find anime details")
@@ -246,6 +260,79 @@ class AnimeApiTest extends BaseTest {
                 assertThat(st.getFullName().replaceAll("\\s+", " ").trim())
                         .as("staff[%d].fullName normalized", i)
                         .isNotBlank();
+            }
+        }
+
+    }
+
+    @Nested
+    @DisplayName("Anime episode video sources tests")
+    class AnimeEpisodeVideoSourcesTest {
+
+        @Test
+        @Disabled("For local test purposes only - demonstrates filtering and sorting")
+        void testFilteringAndSorting() {
+            login();
+
+            List<VideoSource> videoSources1 = animeApi.getVideoSources(
+                    VideoSourceRequest.builder()
+                            .animeId(970L)
+                            .episodeId(15120L)
+                            .addQuality(VideoQuality.FULL_HD_1080P)
+                            .sort(Sort.by(SortType.CREATED_AT.desc()))
+                            .build()
+            );
+
+            List<VideoSource> videoSources2 = animeApi.getVideoSources(
+                    VideoSourceRequest.builder()
+                            .animeId(970L)
+                            .episodeId(15120L)
+                            .addService("CDA")
+                            .addService("Dailymotion")
+                            .addSubtitlesLanguage("PL")
+                            .sort(Sort.by(
+                                    SortType.QUALITY.desc(),
+                                    SortType.SERVICE.asc()
+                            ))
+                            .build()
+            );
+
+            List<VideoSource> videoSources3 = animeApi.getVideoSources(
+                    VideoSourceRequest.builder()
+                            .animeId(970L)
+                            .episodeId(15120L)
+                            .sort(Sort.by(
+                                    SortType.QUALITY.desc(),
+                                    SortType.SERVICE.asc(),
+                                    SortType.CREATED_AT.desc()
+                            ))
+                            .build()
+            );
+
+            assertThat(videoSources1).isNotEmpty();
+            assertThat(videoSources2).isNotEmpty();
+            assertThat(videoSources3).isNotEmpty();
+        }
+
+        @Test
+        void testGetVideoSourceUrl() {
+            login();
+
+            List<VideoSource> videoSources = animeApi.getVideoSources(
+                    VideoSourceRequest.builder()
+                            .animeId(970L)
+                            .episodeId(15120L)
+                            .build()
+            );
+
+            assertThat(videoSources).isNotEmpty();
+
+            VideoSource source = videoSources.get(0);
+            List<String> urls = animeApi.videoSourceUrl(source.getId());
+
+            assertThat(urls).isNotNull().isNotEmpty();
+            for (String url : urls) {
+                assertThat(url).startsWith("https://");
             }
         }
 

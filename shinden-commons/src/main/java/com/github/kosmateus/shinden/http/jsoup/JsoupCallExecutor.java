@@ -42,6 +42,7 @@ class JsoupCallExecutor {
     protected ResponseHandler<Document> executeConnection(Supplier<Connection> connectionSupplier) {
         try {
             Response response = authenticatedConnection(connectionSupplier.get()).execute();
+            updateCookies(response);
             return ResponseHandler.of(response.parse(), response.statusCode(), response.headers(), response.cookies());
         } catch (IOException e) {
             int httpStatus = HttpStatusExceptionRetrieval.getHttpStatus(e).orElse(HttpStatus.BAD_REQUEST).value();
@@ -69,5 +70,16 @@ class JsoupCallExecutor {
             connection.cookies(cookies);
         }
         return connection;
+    }
+
+    public void updateCookies(Response response) {
+        Map<String, String> cookiesToUpdate = response.headers("Set-Cookie").stream()
+                .map(cookieStr -> cookieStr.split(";", 2)[0]) // Get only the key=value part
+                .map(keyValueStr -> keyValueStr.split("=", 2)) // Split into key and value
+                .filter(parts -> parts.length == 2) // Ensure we have both key and value
+                .collect(HashMap::new, (map, parts) -> map.put(parts[0], parts[1]), HashMap::putAll);
+        if (!cookiesToUpdate.isEmpty()) {
+            sessionManager.updateCookies(cookiesToUpdate);
+        }
     }
 }

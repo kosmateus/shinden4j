@@ -31,4 +31,15 @@ public class InMemorySessionManager implements SessionManager {
     public boolean isSuccessfullyAuthenticated() {
         return StringUtils.isNotBlank(authToken);
     }
+
+    @Override
+    public void updateCookies(Map<String, String> newCookies) {
+        if (cookies == null) {
+            cookies = newCookies;
+        } else {
+            cookies.putAll(newCookies);
+        }
+    }
+
+
 }

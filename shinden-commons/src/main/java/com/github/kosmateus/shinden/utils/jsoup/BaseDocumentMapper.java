@@ -3,6 +3,7 @@ package com.github.kosmateus.shinden.utils.jsoup;
 import com.github.kosmateus.shinden.auth.PageStructureChangedException;
 import com.github.kosmateus.shinden.exception.ErrorCode;
 import com.google.common.collect.ImmutableMap;
+import com.google.gson.Gson;
 import lombok.Getter;
 import org.apache.commons.lang3.tuple.Pair;
 
@@ -29,6 +30,7 @@ public abstract class BaseDocumentMapper {
      * The {@link DocumentMapperEngine} instance used for mapping document data.
      */
     protected final DocumentMapperEngine mapper = createMapper();
+    protected final Gson gson = new Gson();
 
     /**
      * Returns a code that uniquely identifies the mapper.
