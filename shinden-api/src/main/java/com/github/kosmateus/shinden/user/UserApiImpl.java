@@ -40,7 +40,6 @@ import com.github.kosmateus.shinden.user.response.UserOverview;
 import com.github.kosmateus.shinden.user.response.UserSettings;
 import com.google.inject.Inject;
 import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
 import org.jsoup.Connection.KeyVal;
 import org.jsoup.nodes.Document;
 
@@ -60,7 +59,6 @@ import static com.github.kosmateus.shinden.utils.ResponseHandlerValidator.valida
  *
  * @version 1.0.0
  */
-@Slf4j
 @RequiredArgsConstructor(onConstructor_ = @__(@Inject))
 class UserApiImpl implements UserApi {
 

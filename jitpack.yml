@@ -1,0 +1,4 @@
+jdk:
+  - openjdk8
+install:
+  - mvn -pl shinden-api -am clean install -DskipTests

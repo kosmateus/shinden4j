@@ -16,7 +16,6 @@ import com.github.kosmateus.shinden.enums.tag.Studio;
 import com.github.kosmateus.shinden.request.FixedPageable;
 import com.github.kosmateus.shinden.request.Sort;
 import com.github.kosmateus.shinden.response.Page;
-import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Nested;
@@ -29,7 +28,6 @@ import java.util.List;
 import static com.github.kosmateus.shinden.anime.request.AnimeSearchRequest.SortType.TITLE;
 import static org.assertj.core.api.Assertions.assertThat;
 
-@Slf4j
 @DisplayName("Anime API tests")
 class AnimeApiTest extends BaseTest {
 
