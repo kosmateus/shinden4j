@@ -13,6 +13,7 @@
         <artifactId>shinden4j</artifactId>
         <groupId>com.github.kosmateus</groupId>
         <version>${revision}</version>
+        <relativePath>..</relativePath>
     </parent>
 
     <dependencies>

@@ -6,6 +6,7 @@
         <groupId>com.github.kosmateus</groupId>
         <artifactId>shinden4j</artifactId>
         <version>${revision}</version>
+        <relativePath>..</relativePath>
     </parent>
 
     <artifactId>shinden-api</artifactId>
